@@ -1,0 +1,51 @@
+.about-container {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', sans-serif;
+    color: #222;
+    margin-top: -29px;
+  }
+  
+  .about-hero {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .about-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #1e2a38;
+  }
+  
+  .about-hero p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .about-section {
+    margin-bottom: 30px;
+  }
+  
+  .about-section h2 {
+    color: #1f3b57;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+  }
+  
+  .about-section p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  .about-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .about-section li {
+    margin-bottom: 8px;
+    color: #444;
+  }
+  
