@@ -39,8 +39,8 @@ const Navigator = () => {
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/pricing" className="nav-link">
-            Pricing
+          <NavLink to="/Career" className="nav-link">
+            Career
           </NavLink>
         </li>
         <li className="nav-item">
