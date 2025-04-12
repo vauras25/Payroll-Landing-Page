@@ -14,15 +14,39 @@ import valuepic5 from "../../image/valuepic5.avif";
 const ValueComponent = () => {
     const [selectedRole, setSelectedRole] = useState("CIO");
 
-    // Memoize the roles array to prevent unnecessary recalculations
+    // // Memoize the roles array to prevent unnecessary recalculations
+    // const roles = useMemo(() => [
+    //     { name: "CIO", img: valuepic1 },
+    //     { name: "CHRO", img: valuepic2 },
+    //     { name: "Payroll Admin", img: valuepic3 },
+    //     { name: "Managers", img: valuepic4 },
+    //     { name: "Employees", img: valuepic5 },
+    // ], []); // Empty dependency array means this will only run on mount
+
+    // const currentIndex = roles.findIndex((role) => role.name === selectedRole);
+
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         // Move to the next role, loop back to the start if at the last role
+    //         const nextIndex = (currentIndex + 1) % roles.length;
+    //         setSelectedRole(roles[nextIndex].name);
+    //     }, 6000);
+
+    //     return () => clearInterval(interval); // Cleanup interval on component unmount
+    // }, [selectedRole, roles, currentIndex]); // Added 'roles' to the dependency array
+
+
+
+
     const roles = useMemo(() => [
         { name: "CIO", img: valuepic1 },
         { name: "CHRO", img: valuepic2 },
         { name: "Payroll Admin", img: valuepic3 },
         { name: "Managers", img: valuepic4 },
         { name: "Employees", img: valuepic5 },
-    ], []); // Empty dependency array means this will only run on mount
-
+    ], []);
+    
+    // UseMemo is used, so this line won't cause unnecessary re-renders
     const currentIndex = roles.findIndex((role) => role.name === selectedRole);
 
     useEffect(() => {
@@ -33,7 +57,7 @@ const ValueComponent = () => {
         }, 6000);
 
         return () => clearInterval(interval); // Cleanup interval on component unmount
-    }, [selectedRole, roles, currentIndex]); // Added 'roles' to the dependency array
+    }, [selectedRole, currentIndex]); // Removed 'roles' as it’s memoized and won’t change
 
     return (
         <div className="value-container">
