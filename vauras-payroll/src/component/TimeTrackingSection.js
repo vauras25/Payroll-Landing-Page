@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import "./TimeTrackingSection.css";
-import { FaClock, FaClipboardList, FaUsers, FaDollarSign, FaFileInvoice } from "react-icons/fa";
-import timeTrackingImg from "../image/time-tracking.png"; 
-import timesheetsImg from "../image/timesheets.png"; 
-// import attendanceImg from "../image/attendance.png"; 
-import payRatesImg from "../image/pay-rates.png"; 
-// import expensesImg from "../image/expenses.png"; 
+import { FaClock, FaClipboardList, FaUsers, FaDollarSign, FaFileInvoice } from "react-icons/fa"; 
 import employee from "../image/employee.jpg"; 
 import attendence from "../image/attendence.jpg"; 
 import salary from "../image/salary.jpg"; 

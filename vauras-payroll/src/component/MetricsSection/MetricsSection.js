@@ -49,7 +49,7 @@ const MetricsSection = () => {
     if (metricsRef.current) {
       observer.observe(metricsRef.current);
     }
-  }, []);
+  }, [handleCountUp]);
 
   useEffect(() => {
     if (isInView) {

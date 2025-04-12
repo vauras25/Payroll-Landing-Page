@@ -1,7 +1,5 @@
 import React from "react";
 import "../App.css";
-import applelogo from '../image/applelogo.svg';
-import google from '../image/google.svg';
 import './FooterSection.css'; // Create this new CSS file
 
 const FooterSection = () => {
