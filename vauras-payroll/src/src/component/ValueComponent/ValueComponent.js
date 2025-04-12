@@ -32,7 +32,7 @@ const ValueComponent = () => {
         }, 6000);
     
         return () => clearInterval(interval); // Cleanup interval on component unmount
-      }, [selectedRole]); 
+      }, [selectedRole,currentIndex]); 
 
     return (
         <div className="value-container">

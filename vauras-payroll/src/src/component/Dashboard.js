@@ -93,7 +93,7 @@ function Dashboard() {
       }, 1500);
       return () => clearTimeout(pause);
     }
-  }, [charIndex, wordIndex]);
+  }, [charIndex, wordIndex,words]);
 
   // const prevImage = () => {
   //   setAnimate(false);

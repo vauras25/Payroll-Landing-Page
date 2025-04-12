@@ -25,7 +25,6 @@ const CommunitySection = () => {
           </div>
           <h3>vaurasHR Academy</h3>
           <p>Only academy offering courses for HR & Payroll in India</p>
-          {/* <a href="#" className="know-more">Know More</a> */}
           
         </div>
 
@@ -36,7 +35,6 @@ const CommunitySection = () => {
           </div>
           <h3>vauras Community</h3>
           <p>Membership to nationwide online HR community</p>
-          {/* <a href="#" className="know-more">Know More</a> */}
         </div>
         
 
@@ -46,7 +44,6 @@ const CommunitySection = () => {
           </div>
           <h3>vauras Community</h3>
           <p>Membership to nationwide online HR community</p>
-          {/* <a href="#" className="know-more">Know More</a> */}
         </div>
 
 
@@ -57,7 +54,6 @@ const CommunitySection = () => {
           </div>
           <h3>vauras Community</h3>
           <p>Membership to nationwide online HR community</p>
-          {/* <a href="#" className="know-more">Know More</a> */}
         </div>
 
 
@@ -69,7 +65,6 @@ const CommunitySection = () => {
           </div>
           <h3>Vauras Community</h3>
           <p>Membership to nationwide online HR community</p>
-          {/* <a href="#" className="know-more">Know More</a> */}
         </div>
 
 
@@ -79,7 +74,6 @@ const CommunitySection = () => {
           </div>
           <h3>vauras Community</h3>
           <p>Membership to nationwide online HR community</p>
-          {/* <a href="#" className="know-more">Know More</a> */}
         </div>
       </div>
     </section>
