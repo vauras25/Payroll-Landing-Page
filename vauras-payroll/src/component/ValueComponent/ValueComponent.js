@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import "./ValueComponent.css";
 import personImage from "../../image/person1.avif";
 import personImage2 from "../../image/chroimage.avif";
@@ -14,25 +14,26 @@ import valuepic5 from "../../image/valuepic5.avif";
 const ValueComponent = () => {
     const [selectedRole, setSelectedRole] = useState("CIO");
 
-    const roles = [
+    // Memoize the roles array to prevent unnecessary recalculations
+    const roles = useMemo(() => [
         { name: "CIO", img: valuepic1 },
         { name: "CHRO", img: valuepic2 },
         { name: "Payroll Admin", img: valuepic3 },
         { name: "Managers", img: valuepic4 },
         { name: "Employees", img: valuepic5 },
-    ];
+    ], []); // Empty dependency array means this will only run on mount
 
     const currentIndex = roles.findIndex((role) => role.name === selectedRole);
 
     useEffect(() => {
         const interval = setInterval(() => {
-          // Move to the next role, loop back to the start if at the last role
-          const nextIndex = (currentIndex + 1) % roles.length;
-          setSelectedRole(roles[nextIndex].name);
+            // Move to the next role, loop back to the start if at the last role
+            const nextIndex = (currentIndex + 1) % roles.length;
+            setSelectedRole(roles[nextIndex].name);
         }, 6000);
-    
+
         return () => clearInterval(interval); // Cleanup interval on component unmount
-      }, [selectedRole, roles]); // Added 'roles' to the dependency array
+    }, [selectedRole, roles, currentIndex]); // Added 'roles' to the dependency array
 
     return (
         <div className="value-container">
@@ -178,6 +179,8 @@ const ValueComponent = () => {
                     </div>
                 </div>
             )}
+
+
 
             {selectedRole === "Employees" && (
                 <div className="value-container">
