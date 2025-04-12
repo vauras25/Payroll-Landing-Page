@@ -1,4 +1,4 @@
-import React, { useState ,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./ValueComponent.css";
 import personImage from "../../image/person1.avif";
 import personImage2 from "../../image/chroimage.avif";
@@ -32,13 +32,11 @@ const ValueComponent = () => {
         }, 6000);
     
         return () => clearInterval(interval); // Cleanup interval on component unmount
-      }, [selectedRole,currentIndex]); 
+      }, [selectedRole, roles]); // Added 'roles' to the dependency array
 
     return (
         <div className="value-container">
             {/* Heading */}
-
-            
             <h2>
                 Everyone gets value from day 1
             </h2>
@@ -215,4 +213,3 @@ const ValueComponent = () => {
 };
 
 export default ValueComponent;
-
