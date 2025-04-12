@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import "../App.css";
 import "./Dashboard.css";
 import sampleImage from "../image/dashimage.jpg";
@@ -67,15 +67,15 @@ const imageList = [
 ];
 
 function Dashboard() {
-  const words = ["hybrid", "modern"];
+  // Memoize 'words' to avoid unnecessary re-creations
+  const words = useMemo(() => ["hybrid", "modern"], []);
+  
   const [wordIndex, setWordIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animate, setAnimate] = useState(false);
-
   const [prevIndex, setPrevIndex] = useState(currentIndex);
-
 
   useEffect(() => {
     const currentWord = words[wordIndex];
@@ -93,19 +93,7 @@ function Dashboard() {
       }, 1500);
       return () => clearTimeout(pause);
     }
-  }, [charIndex, wordIndex,words]);
-
-  // const prevImage = () => {
-  //   setAnimate(false);
-  //   setCurrentIndex((prev) => (prev - 1 + imageList.length) % imageList.length);
-  //   setTimeout(() => setAnimate(true), 10);
-  // };
-
-  // const nextImage = () => {
-  //   setAnimate(false);
-  //   setCurrentIndex((prev) => (prev + 1) % imageList.length);
-  //   setTimeout(() => setAnimate(true), 10);
-  // };
+  }, [charIndex, wordIndex, words]); // 'words' is memoized now, no longer a problem
 
   const prevImage = () => {
     setAnimate(false);
@@ -121,7 +109,6 @@ function Dashboard() {
     setTimeout(() => setAnimate(true), 10);
   };
 
-
   const getDisplayedItems = () => {
     const leftIndex = (currentIndex + 1) % imageList.length;
     const centerIndex = currentIndex;
@@ -130,20 +117,6 @@ function Dashboard() {
   };
 
   const [left, center, right] = getDisplayedItems();
-
-  // const renderItem = (item, position) => {
-  //   const containerClass = `image-container ${position} ${position === "center" && animate ? "animate-center" : ""}`;
-
-  //   return (
-  //     <div className={containerClass}>
-  //       {item.type === "image" ? (
-  //         <img src={item.src} alt={position} />
-  //       ) : (
-  //         <GrowthChart />
-  //       )}
-  //     </div>
-  //   );
-  // };
 
   const renderItem = (item, position, index) => {
     let containerClass = "image-container";
@@ -171,7 +144,6 @@ function Dashboard() {
     );
   };
 
-
   return (
     <div className="landing-container">
       <h1>
@@ -192,14 +164,10 @@ function Dashboard() {
           &#8249;
         </button>
 
-        {/* <div className="image-group">
-          {renderItem(left, "side")}
-          {renderItem(center, "center")}
-          {renderItem(right, "side")}
-        </div> */}
         {renderItem(left, "side", (currentIndex + 1) % imageList.length)}
         {renderItem(center, "center", currentIndex)}
         {renderItem(right, "side", (currentIndex - 1 + imageList.length) % imageList.length)}
+
         <button className="carousel-arrow right" onClick={nextImage}>
           &#8250;
         </button>
