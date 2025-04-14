@@ -1,6 +1,6 @@
 import React from "react";
 import Dashboard from "./Dashboard";
-import MetricsSection from "../component/MetricsSection/MetricsSection";
+//import MetricsSection from "../component/MetricsSection/MetricsSection";
 import ComplianceSection from "./ComplianceSection";
 import FooterSection from "./FooterSection";
 import TimeTrackingSection from "./TimeTrackingSection";
@@ -13,7 +13,7 @@ function Home() {
 
         <div>
         <Dashboard/>
-      <MetricsSection/> 
+     {/* <MetricsSection/> */}
        <WallofLove/>
        <TimeTrackingSection/>
       <ValueComponent/> 
