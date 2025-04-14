@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import "../MetricsSection/MetricsSection.css";
 import logo1 from './image/logo1.svg';
 import logo2 from './image/logo2.svg';
@@ -19,14 +19,33 @@ const MetricsSection = () => {
     { label: "Payments", value: 300000 },
   ];
 
-  const handleCountUp = (target) => {
+  // const handleCountUp = (target) => {
+  //   const elements = target.querySelectorAll(".metric-item h2");
+  //   elements.forEach((el, index) => {
+  //     let start = 0;
+  //     const end = metricsData[index].value;
+  //     const duration = 2000;
+  //     const increment = Math.ceil((end / duration) * 100);
+
+  //     const interval = setInterval(() => {
+  //       start += increment;
+  //       if (start >= end) {
+  //         clearInterval(interval);
+  //         start = end;
+  //       }
+  //       el.textContent = start.toLocaleString();
+  //     }, 100);
+  //   });
+  // };
+
+  const handleCountUp = useCallback((target) => {
     const elements = target.querySelectorAll(".metric-item h2");
     elements.forEach((el, index) => {
       let start = 0;
       const end = metricsData[index].value;
       const duration = 2000;
       const increment = Math.ceil((end / duration) * 100);
-
+  
       const interval = setInterval(() => {
         start += increment;
         if (start >= end) {
@@ -36,7 +55,7 @@ const MetricsSection = () => {
         el.textContent = start.toLocaleString();
       }, 100);
     });
-  };
+  }, [metricsData]); 
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
