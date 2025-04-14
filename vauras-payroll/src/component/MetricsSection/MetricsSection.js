@@ -85,7 +85,7 @@ const MetricsSection = () => {
     if (isInView) {
       handleCountUp(metricsRef.current);
     }
-  }, [isInView]);
+  }, [isInView , handleCountUp]);
   const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7,logo1, logo2, logo3, logo4, logo5, logo6, logo7];
 
 
