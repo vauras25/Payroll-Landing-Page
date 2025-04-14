@@ -13,10 +13,10 @@ function Home() {
 
         <div>
         <Dashboard/>
-       {/* <MetricsSection/> */}
+      <MetricsSection/> 
        <WallofLove/>
        <TimeTrackingSection/>
-       {/* <ValueComponent/> */}
+      <ValueComponent/> 
        <Features/>
        <CommunitySection/>
        <ComplianceSection/>
