@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from "react";
+import React, { useState, useEffect, useRef, useCallback ,useMemo} from "react";
 import "../MetricsSection/MetricsSection.css";
 import logo1 from './image/logo1.svg';
 import logo2 from './image/logo2.svg';
@@ -12,12 +12,23 @@ const MetricsSection = () => {
   const [isInView, setIsInView] = useState(false);
   const metricsRef = useRef(null);
 
-  const metricsData = [
+  // const metricsData = [
+  //   { label: "Active users", value: 500000 },
+  //   { label: "Total hours tracked", value: 21000000 },
+  //   { label: "Tasks completed", value: 4000000 },
+  //   { label: "Payments", value: 300000 },
+  // ];
+
+
+
+  const metricsData = useMemo(() => [
     { label: "Active users", value: 500000 },
     { label: "Total hours tracked", value: 21000000 },
     { label: "Tasks completed", value: 4000000 },
     { label: "Payments", value: 300000 },
-  ];
+  ], []);
+
+  
 
   // const handleCountUp = (target) => {
   //   const elements = target.querySelectorAll(".metric-item h2");
