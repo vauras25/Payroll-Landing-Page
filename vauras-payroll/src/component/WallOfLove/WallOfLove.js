@@ -9,31 +9,31 @@ import testinomial4 from '../../image/testinomial4.avif'
 const WallOfLove = () => {
     const testimonials = [
         {
-            company: 'QED',
-            text: "RazorpayX’s solutions should be among the primary products a startup founder should subscribe to for managing financial operations.",
-            name: 'Aravind S',
-            title: 'Founder, QED Corporation',
+            company: 'CEO',
+            text: " In any SME office / factory the one thing that is often missed is the compliance for Employees’ PF and ESI. In the last year and half I have outsourced the complete work for maintenance and compliance of PF and ESI for all my employees to Vauras. Since then this area has gone from being an expense to becoming an income generation. Not only did she get me enrolled in various scheme which save me 10% on Employee salary but her team follows up regularly to make sure payments are done on time and we also get Income Tax benefits.I thank Salarybooks for providing the right guidance, follow-up and schemes to help me and my employees. I have been and will continue to refer her to my network.",
+            name: 'Mayank Patodia',
+            title: 'CEO, Advantex Solar',
             avatar: 'https://via.placeholder.com/50'
         },
         {
-            company: 'Newton School',
-            text: "Our employees love the new system - they can access their pay slips instantly, edit their tax deductions, and add reimbursements, all from the comfort of their laptops.",
-            name: 'Nishant Chandra',
-            title: 'Co-founder, Newton School',
+            company: 'Owner',
+            text: "Our employees love the new system - they can access their pay slips instantly, edit their tax deductions, and add reimbursements, all from the comfort of their own phones or laptops.",
+            name: 'Rudresh Agarwal',
+            title: 'Owner,Ol Terra',
             avatar: 'https://via.placeholder.com/50'
         },
         {
-            company: 'Techify',
-            text: "RazorpayX Payroll has simplified our entire process. The automation has saved us countless hours, and the platform is so easy to use!",
-            name: 'Anjali P',
-            title: 'Founder, Techify',
+            company: 'Drivers4Me',
+            text: "SalaryBooks.com should be among the primary products a startup founder should subscribe to for managing employee related transactions.",
+            name: 'Rajarshi Nag',
+            title: 'Drivers4Me, Vauras',
             avatar: 'https://via.placeholder.com/50'
         },
         {
-            company: 'InnoSolutions',
-            text: "Our employees love the new system - they can access their pay slips instantly, edit their tax deductions, and add reimbursements, all from the comfort of their laptops.",
-            name: 'Ravi K',
-            title: 'CEO, InnoSolutions',
+            company: 'Director',
+            text: "Salarybooks.com Payroll has simplified our entire process. The automation has saved us countless hours, and the platform is pretty easy to use!",
+            name: 'Manav saraf',
+            title: 'Director, BMPK',
             avatar: 'https://via.placeholder.com/50'
         },
         {
@@ -87,7 +87,7 @@ const WallOfLove = () => {
         <div className="wall-of-love-container">
             <div className="wall-left">
                 <h2>Wall of love</h2>
-                <p>As it turns out, people love RazorpayX Payroll. Here is what some of our users have to say.</p>
+                <p>As it turns out, people love Vauras Payroll. Here is what some of our users have to say.</p>
             </div>
 
             <div className="testimonials-wrapper">

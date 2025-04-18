@@ -6,6 +6,8 @@ import sampleImage1 from "../image/business.avif";
 import sampleImage2 from "../image/global.jpg";
 import sampleImage3 from "../image/extra1.jpg";
 import sampleImage4 from "../image/extra2.jpg";
+import sampleImage5 from "../image/extra2.jpg";
+
 import { Line } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -19,7 +21,6 @@ import {
 
 ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement, Tooltip, Legend);
 
-// Chart Component
 const GrowthChart = () => {
   const data = {
     labels: ["Q1", "Q2", "Q3", "Q4", "Q1", "Q2"],
@@ -56,7 +57,6 @@ const GrowthChart = () => {
   );
 };
 
-// Carousel Image List
 const imageList = [
   { type: "image", src: sampleImage1 },
   { type: "image", src: sampleImage2 },
@@ -64,18 +64,18 @@ const imageList = [
   { type: "image", src: sampleImage },
   { type: "image", src: sampleImage3 },
   { type: "image", src: sampleImage4 },
+  { type: "image", src: sampleImage5 },
 ];
 
 function Dashboard() {
-  // Memoize 'words' to avoid unnecessary re-creations
-  const words = useMemo(() => ["hybrid", "modern"], []);
-  
+  const words = useMemo(() => ["Salary", "Compliances", "Payments"], []);
   const [wordIndex, setWordIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animate, setAnimate] = useState(false);
   const [prevIndex, setPrevIndex] = useState(currentIndex);
+  const [direction, setDirection] = useState("right");
 
   useEffect(() => {
     const currentWord = words[wordIndex];
@@ -93,48 +93,44 @@ function Dashboard() {
       }, 1500);
       return () => clearTimeout(pause);
     }
-  }, [charIndex, wordIndex, words]); // 'words' is memoized now, no longer a problem
+  }, [charIndex, wordIndex, words]);
 
   const prevImage = () => {
-    setAnimate(false);
+    setDirection("left");
     setPrevIndex(currentIndex);
     setCurrentIndex((prev) => (prev - 1 + imageList.length) % imageList.length);
+    setAnimate(false);
     setTimeout(() => setAnimate(true), 10);
   };
 
   const nextImage = () => {
-    setAnimate(false);
+    setDirection("right");
     setPrevIndex(currentIndex);
     setCurrentIndex((prev) => (prev + 1) % imageList.length);
+    setAnimate(false);
     setTimeout(() => setAnimate(true), 10);
   };
 
-  const getDisplayedItems = () => {
-    const leftIndex = (currentIndex + 1) % imageList.length;
-    const centerIndex = currentIndex;
-    const rightIndex = (currentIndex - 1 + imageList.length) % imageList.length;
-    return [imageList[leftIndex], imageList[centerIndex], imageList[rightIndex]];
-  };
-
-  const [left, center, right] = getDisplayedItems();
+  const getIndex = (offset) =>
+    (currentIndex + offset + imageList.length) % imageList.length;
 
   const renderItem = (item, position, index) => {
-    let containerClass = "image-container";
+    let className = "image-container " + position;
 
-    if (position === "center") {
-      containerClass += " center";
-      if (animate && index !== prevIndex) {
-        containerClass += " animate-center";
-      }
-    } else {
-      containerClass += " side";
-      if (animate && index === prevIndex) {
-        containerClass += " animate-to-side";
-      }
+    if (animate && index === prevIndex) {
+      className +=
+        direction === "right"
+          ? " card-slide-out-right"
+          : " card-slide-out-left";
+    } else if (animate && index === currentIndex) {
+      className +=
+        direction === "right"
+          ? " card-slide-in-right"
+          : " card-slide-in-left";
     }
 
     return (
-      <div className={containerClass} key={index}>
+      <div className={className} key={position}>
         {item.type === "image" ? (
           <img src={item.src} alt={position} />
         ) : (
@@ -144,31 +140,59 @@ function Dashboard() {
     );
   };
 
+  const positions = [-2, -1, 0, 1, 2];
+  const positionNames = [
+    "leftmost",
+    "left",
+    "center",
+    "right",
+    "rightmost",
+  ];
+
   return (
     <div className="landing-container">
       <h1>
-        Time tracking software for <br />
-        the <span className="dynamic-text">{displayedText}</span> workforce
+        Effortless Payroll & Compliance <br />
+        <span className="dynamic-text">{displayedText}</span> Automated
       </h1>
       <p className="subtext">
-        Transform outdated payroll practices and build a better workplace for your business with Vauras Payroll.
+        Simplify Salaries with Accuracy and Practicality, maximize productivity
+        while reducing risk
       </p>
 
       <div className="button-group">
-        <button className="primary-btn">Try For Free</button>
-        <button className="secondary-btn">Request Demo</button>
+        <button className="primary-btn">
+          <a
+            href="https://www.vauras.in/"
+            className="link1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get Fully managed Services
+          </a>
+        </button>
+        <button className="secondary-btn">
+          <a
+            href="https://www.vauras.in/"
+            className="link2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Request Demo
+          </a>
+        </button>
       </div>
 
       <div className="carousel">
-        <button className="carousel-arrow left" onClick={prevImage}>
+        <button className="carousel-arrow_left" onClick={prevImage}>
           &#8249;
         </button>
 
-        {renderItem(left, "side", (currentIndex + 1) % imageList.length)}
-        {renderItem(center, "center", currentIndex)}
-        {renderItem(right, "side", (currentIndex - 1 + imageList.length) % imageList.length)}
+        {positions.map((offset, idx) =>
+          renderItem(imageList[getIndex(offset)], positionNames[idx], getIndex(offset))
+        )}
 
-        <button className="carousel-arrow right" onClick={nextImage}>
+        <button className="carousel-arrow_right" onClick={nextImage}>
           &#8250;
         </button>
       </div>

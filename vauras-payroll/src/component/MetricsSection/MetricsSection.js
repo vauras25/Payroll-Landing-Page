@@ -22,10 +22,10 @@ const MetricsSection = () => {
 
 
   const metricsData = useMemo(() => [
-    { label: "Active users", value: 500000 },
-    { label: "Total hours tracked", value: 21000000 },
-    { label: "Tasks completed", value: 4000000 },
-    { label: "Payments", value: 300000 },
+    { label: "Employees Managed", value: 20000 , suffix:"+" },
+    { label: "Clients Managed", value: 400 , suffix:"+" },
+    { label: "Handled", value: 375 ,suffix:" Cr" },
+    { label: "Team Size", value: 50 , suffix:"+" },
   ], []);
 
   
@@ -49,25 +49,27 @@ const MetricsSection = () => {
   //   });
   // };
 
-  const handleCountUp = useCallback((target) => {
-    const elements = target.querySelectorAll(".metric-item h2");
+  const handleCountUp = (target) => {
+    const elements = target.querySelectorAll('.metric-item h2');
     elements.forEach((el, index) => {
       let start = 0;
       const end = metricsData[index].value;
-      const duration = 2000;
-      const increment = Math.ceil((end / duration) * 100);
+      const suffix = metricsData[index].suffix || "";
+      const duration = 2000; // duration in ms
+      const increment = Math.ceil(end / (duration / 100)); // increment every 100ms
   
       const interval = setInterval(() => {
         start += increment;
         if (start >= end) {
           clearInterval(interval);
-          start = end;
+          el.textContent = `${end.toLocaleString()}${suffix}`; 
+        } else {
+          el.textContent = start.toLocaleString(); 
         }
-        el.textContent = start.toLocaleString();
       }, 100);
     });
-  }, [metricsData]); 
-
+  };
+  
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {

@@ -1,24 +1,30 @@
-/* General Layout */
 .landing-container {
   text-align: center;
   padding: 40px 20px;
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* Header Text */
+.link1{
+  color: white;
+  text-decoration: none;
+}
+
+.link2 {
+  color: #000000;
+  text-decoration: none;
+}
+
 .dynamic-text {
   color: #007bff;
   font-weight: bold;
 }
 
-/* Subtext */
 .subtext {
   font-size: 1rem;
   margin-bottom: 30px;
   color: #555;
 }
 
-/* Button Group */
 .button-group {
   margin-bottom: 40px;
 }
@@ -36,62 +42,66 @@
 .primary-btn {
   background-color: #007bff;
   color: white;
+  width: 14%;
 }
 
 .secondary-btn {
   background-color: #f0f0f0;
-  color: #333;
+  color: #000000;
 }
 
-/* Carousel Layout */
 .carousel {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  gap: 10px;
+  margin-top: 40px;
 }
 
-/* Arrows */
-.carousel-arrow {
+.carousel-arrow_left,
+.carousel-arrow_right {
   background: none;
   border: none;
   font-size: 2rem;
   color: rgb(112, 103, 103);
   cursor: pointer;
   z-index: 1;
-  transition: transform 0.2s ease;
   padding: 10px;
   opacity: 20.5%;
 }
 
-.carousel-arrow:hover {
-  transform: scale(1.2);
-}
-
-/* Image Group Layout */
-.image-group {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
-
-/* Image Containers */
 .image-container {
   transition: transform 0.6s ease, opacity 0.6s ease;
   border-radius: 10px;
   overflow: hidden;
 }
 
-/* Side Images */
-.image-container.side {
+.image-container.leftmost,
+.image-container.rightmost {
+  width: 140px;
+  height: 100px;
+  transform: scale(0.7);
+  opacity: 0.4;
+}
+
+.image-container.left,
+.image-container.right {
   width: 200px;
   height: 140px;
   transform: scale(0.9);
   opacity: 0.6;
 }
 
-/* Center Image */
+.image-container.far-left,
+.image-container.far-right {
+  width: 80px;
+  height: 80px;
+  transform: scale(0.5);
+  opacity: 0.2;
+}
+
+
 .image-container.center {
   width: 550px;
   height: 400px;
@@ -100,46 +110,86 @@
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
 }
 
-/* Image Fit */
 .image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* Chart Sizing */
 .chart-container {
   width: 100%;
   height: 100%;
 }
 
-/* Animations */
-.animate-center {
-  animation: scaleUp 2s ease forwards;
-}
-
-.animate-to-side {
-  animation: scaleDown 2s ease forwards;
-}
-
-@keyframes scaleUp {
+/* Animation keyframes */
+@keyframes slideScaleInLeft {
   0% {
-    transform: scale(0.9);
-    opacity: 0.6;
+    transform: translateX(80%) scale(0);
+    opacity: 0.5;
+    filter: blur(4px);
   }
   100% {
-    transform: scale(1);
+    transform: translateX(0) scale(1);
     opacity: 1;
+    filter: blur(0);
   }
 }
 
-@keyframes scaleDown {
+@keyframes slideScaleOutLeft {
   0% {
-    transform: scale(1);
+    transform: translateX(0) scale(1);
     opacity: 1;
+    filter: blur(0);
   }
   100% {
-    transform: scale(0.9);
-    opacity: 0.6;
+    transform: translateX(-80%) scale(0);
+    opacity: 0.5;
+    filter: blur(4px);
   }
+}
+
+@keyframes slideScaleInRight {
+  0% {
+    transform: translateX(-80%) scale(0);
+    opacity: 0.5;
+    filter: blur(4px);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes slideScaleOutRight {
+  0% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
+    transform: translateX(80%) scale(0);
+    opacity: 0.5;
+    filter: blur(4px);
+  }
+}
+
+.card-slide-in-left {
+  animation: slideScaleInLeft 0.8s ease forwards;
+  z-index: 5;
+}
+
+.card-slide-out-left {
+  animation: slideScaleOutLeft 0.8s ease forwards;
+  z-index: 1;
+}
+
+.card-slide-in-right {
+  animation: slideScaleInRight 0.8s ease forwards;
+  z-index: 5;
+}
+
+.card-slide-out-right {
+  animation: slideScaleOutRight 0.8s ease forwards;
+  z-index: 1;
 }

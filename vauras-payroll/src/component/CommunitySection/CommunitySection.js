@@ -4,6 +4,7 @@ import logo1 from "./image/logo1.png"
 import logo2 from "./image/logo2.png"
 import logo3 from "./image/logo3.png"
 import logo4 from "./image/logo4.png"
+import logo5 from "./image/logo5.png"
 
 const CommunitySection = () => {
   return (
@@ -25,7 +26,6 @@ const CommunitySection = () => {
           </div>
           <h3>vaurasHR Academy</h3>
           <p>Only academy offering courses for HR & Payroll in India</p>
-          
         </div>
 
         {/* greytHR Community */}
@@ -50,7 +50,7 @@ const CommunitySection = () => {
 
         <div className="card green-bg">
           <div className="card-image">
-            <img src={logo3} alt="greytribe Community" />
+            <img src={logo5} alt="greytribe Community" />
           </div>
           <h3>vauras Community</h3>
           <p>Membership to nationwide online HR community</p>
@@ -67,6 +67,23 @@ const CommunitySection = () => {
           <p>Membership to nationwide online HR community</p>
         </div>
 
+
+        <div className="card green-bg">
+          <div className="card-image">
+            <img src={logo4} alt="greytribe Community" />
+          </div>
+          <h3>vauras Community</h3>
+          <p>Membership to nationwide online HR community</p>
+        </div>
+        
+
+        <div className="card green-bg">
+          <div className="card-image">
+            <img src={logo4} alt="greytribe Community" />
+          </div>
+          <h3>vauras Community</h3>
+          <p>Membership to nationwide online HR community</p>
+        </div>
 
         <div className="card green-bg">
           <div className="card-image">
