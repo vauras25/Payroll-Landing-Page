@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useMemo } from "react";
 import "../App.css";
 import "./Dashboard.css";
-import sampleImage from "../image/dashimage.jpg";
-import sampleImage1 from "../image/business.avif";
-import sampleImage2 from "../image/global.jpg";
-import sampleImage3 from "../image/extra1.jpg";
-import sampleImage4 from "../image/extra2.jpg";
-import sampleImage5 from "../image/extra2.jpg";
+import sampleImage from "../image/logo11.jpg";
+import sampleImage1 from "../image/logo12.jpg";
+import sampleImage2 from "../image/logo13.jpg";
+import sampleImage3 from "../image/logo14.jpg";
+import sampleImage4 from "../image/logo15.jpg";
+import sampleImage5 from "../image/logo15.jpg";
 
 import { Line } from "react-chartjs-2";
 import {
@@ -140,13 +140,13 @@ function Dashboard() {
     );
   };
 
-  const positions = [-2, -1, 0, 1, 2];
+  const positions = [-2,  0,  2];
   const positionNames = [
-    "leftmost",
     "left",
+    
     "center",
+    
     "right",
-    "rightmost",
   ];
 
   return (
