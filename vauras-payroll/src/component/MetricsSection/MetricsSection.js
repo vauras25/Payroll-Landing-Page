@@ -49,7 +49,28 @@ const MetricsSection = () => {
   //   });
   // };
 
-  const handleCountUp = (target) => {
+  // const handleCountUp = (target) => {
+  //   const elements = target.querySelectorAll('.metric-item h2');
+  //   elements.forEach((el, index) => {
+  //     let start = 0;
+  //     const end = metricsData[index].value;
+  //     const suffix = metricsData[index].suffix || "";
+  //     const duration = 2000; // duration in ms
+  //     const increment = Math.ceil(end / (duration / 100)); // increment every 100ms
+  
+  //     const interval = setInterval(() => {
+  //       start += increment;
+  //       if (start >= end) {
+  //         clearInterval(interval);
+  //         el.textContent = `${end.toLocaleString()}${suffix}`; 
+  //       } else {
+  //         el.textContent = start.toLocaleString(); 
+  //       }
+  //     }, 100);
+  //   });
+  // };
+
+  const handleCountUp = useCallback((target) => {
     const elements = target.querySelectorAll('.metric-item h2');
     elements.forEach((el, index) => {
       let start = 0;
@@ -64,11 +85,12 @@ const MetricsSection = () => {
           clearInterval(interval);
           el.textContent = `${end.toLocaleString()}${suffix}`; 
         } else {
-          el.textContent = start.toLocaleString(); 
+          el.textContent = `${start.toLocaleString()}`; 
         }
       }, 100);
     });
-  };
+  }, [metricsData]);
+  
   
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
