@@ -114,20 +114,32 @@ function Dashboard() {
   const getIndex = (offset) =>
     (currentIndex + offset + imageList.length) % imageList.length;
 
+  // const renderItem = (item, position, index) => {
+  //   let className = "image-container " + position;
+
+  //   if (animate && index === prevIndex) {
+  //     className +=
+  //       direction === "right"
+  //         ? " card-slide-out-right"
+  //         : " card-slide-out-left";
+  //   } else if (animate && index === currentIndex) {
+  //     className +=
+  //       direction === "right"
+  //         ? " card-slide-in-right"
+  //         : " card-slide-in-left";
+  //   }
+
   const renderItem = (item, position, index) => {
     let className = "image-container " + position;
-
-    if (animate && index === prevIndex) {
-      className +=
-        direction === "right"
-          ? " card-slide-out-right"
-          : " card-slide-out-left";
-    } else if (animate && index === currentIndex) {
-      className +=
-        direction === "right"
-          ? " card-slide-in-right"
-          : " card-slide-in-left";
+  
+    if (position === "center" && animate) {
+      className += direction === "right"
+        ? " card-slide-in-right"
+        : " card-slide-in-left";
     }
+
+
+   
 
     return (
       <div className={className} key={position}>
@@ -140,14 +152,30 @@ function Dashboard() {
     );
   };
 
-  const positions = [-2,  0,  2];
-  const positionNames = [
-    "left",
-    
-    "center",
-    
-    "right",
-  ];
+
+  // const positions = [1, 0, -1];
+  // const positionNames = ["left", "center", "right"];
+
+  const positions = [ 1, 0, -1];
+const positionNames = [
+
+  "left",
+  "center",
+  "right",
+ 
+];
+
+
+
+
+  // const positions = [-2,  0,  2];
+  // const positionNames = [
+  //   "left",
+
+  //   "center",
+
+  //   "right",
+  // ];
 
   return (
     <div className="landing-container">
@@ -191,6 +219,9 @@ function Dashboard() {
         {positions.map((offset, idx) =>
           renderItem(imageList[getIndex(offset)], positionNames[idx], getIndex(offset))
         )}
+
+       
+
 
         <button className="carousel-arrow_right" onClick={nextImage}>
           &#8250;
