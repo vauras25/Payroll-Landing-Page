@@ -21,7 +21,7 @@ const TimeTrackingSection = () => {
   return (
     <div className="body1">
       <div className="heading">
-      <h2>Seamless <span className="heading-part">payroll solutions</span> for global teams.</h2>
+      <h2 >Seamless <span className="heading-part">payroll solutions</span> for global teams.</h2>
       <p className="heading-part2">Manage the payroll process with time tracking, timesheets, leave management, reporting, and more.</p>
     </div>
     <div className="time-scope">
