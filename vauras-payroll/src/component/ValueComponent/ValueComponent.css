@@ -3,7 +3,7 @@
 .value-container {
   text-align: center;
   padding: 40px 20px;
-  margin-top: -64px;
+  margin-top: 0;
   /* background: linear-gradient(to bottom, #9fb4c5 60%, #1167d6); */
 }
 
@@ -123,6 +123,7 @@
   flex-direction: column;
   width: 47%;
   gap: 20px;
+  margin-top: 80px;
 }
 
 .info-box {
@@ -191,11 +192,14 @@
   .content-container {
     flex-direction: column;
     align-items: center;
+    margin-top: -100px;
+    margin-left: 30px;
   }
 
   .left-section {
     width: 100%;
     align-items: center;
+    
   }
 
   .info-box {
@@ -205,9 +209,11 @@
 
   .task-container {
     width: 100%;
+    height: 100%;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    
   }
 
   .person-image {
@@ -271,8 +277,9 @@
   }
 
   .task-container {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    margin-left: -30px;
   }
 
   
