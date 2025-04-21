@@ -74,7 +74,7 @@ function Dashboard() {
   const [displayedText, setDisplayedText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animate, setAnimate] = useState(false);
-  const [prevIndex, setPrevIndex] = useState(currentIndex);
+  const [,setPrevIndex] = useState(currentIndex);
   const [direction, setDirection] = useState("right");
 
   useEffect(() => {
