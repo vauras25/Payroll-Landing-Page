@@ -54,6 +54,11 @@ const Navigator = () => {
           </NavLink>
         </li>
         <li className="nav-item">
+          <NavLink to="/Priceing" className="nav-link">
+            Priceing
+          </NavLink>
+        </li>
+        <li className="nav-item">
           <a href="https://vauras.cloud/login" className="nav-link" target="_blank" rel="noopener noreferrer">
             Login
           </a>
