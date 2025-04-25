@@ -1,3 +1,4 @@
+/* Pricing container */
 .pricing-container {
   display: flex;
   flex-wrap: wrap;
@@ -7,7 +8,8 @@
   background-color: #ffffff;
 }
 
-.card {
+/* Card styles */
+.pricing-card {
   border: 1px solid #ccc;
   border-radius: 12px;
   padding: 20px;
@@ -20,13 +22,15 @@
   transition: 0.3s;
 }
 
+/* Recommended card */
 .recommended {
   background: #e6f4e6;
-  border: 2px solid #007bff;
+  border: 2px solid #53ade1;
 }
 
+/* Badge for recommended */
 .badge {
-  background-color: #007bff;
+  background-color: #53ade1;
   color: white;
   font-size: 12px;
   padding: 5px 10px;
@@ -36,7 +40,8 @@
   left: 20px;
 }
 
-.card-header {
+/* Card header */
+.pricing-card-header {
   font-weight: bold;
   font-size: 20px;
   padding: 8px 16px;
@@ -45,19 +50,15 @@
   text-align: center;
 }
 
-.essential {
-  background: #e6f3ed;
-  color: #1c7c54;
-  border: 1px solid #1c7c54;
-  width: 16%;
-}
 
+/* Regular card */
 .regular {
-  background: #78b6e3;
+  background: #53ade1;
   color: white;
   width: 16%;
 }
 
+/* Premium card */
 .premium {
   background: #f1f1f1;
   color: #5c5c5c;
@@ -65,38 +66,55 @@
   width: 16%;
 }
 
-.price {
+/* Pricing */
+.pricing-price {
   font-size: 28px;
   font-weight: bold;
   color: #2d2d2d;
   margin: 10px 0;
 }
 
-.price span {
+.pricing-price span {
   font-size: 14px;
   color: #555;
 }
 
-.sub-text {
+/* Sub text under price */
+.pricing-sub-text {
   text-align: center;
   font-size: 14px;
   color: #555;
   margin-bottom: 10px;
 }
 
-ul {
+/* Features list */
+.features-list {
   list-style: none;
   text-align: left;
   margin: 10px 0;
   width: 100%;
 }
 
-ul li {
+.features-list li {
   font-size: 14px;
   margin: 6px 0;
 }
 
-.cta {
+/* Sections list */
+.sections-list {
+  list-style: none;
+  text-align: left;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.sections-list li {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+/* Call-to-action button */
+.cta-button {
   margin-top: auto;
   padding: 12px 20px;
   background-color: #ff6f00;
@@ -108,6 +126,6 @@ ul li {
   transition: background 0.3s ease;
 }
 
-.cta:hover {
+.cta-button:hover {
   background-color: #e65100;
 }
