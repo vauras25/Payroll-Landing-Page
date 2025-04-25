@@ -1,139 +1,95 @@
 import React from 'react';
-import './priceing.css'; // Import CSS file
+import './priceing.css';
+
+const plans = [
+  {
+    type: 'Premium',
+    price: '9,999',
+    perEmployee: '₹100',
+    maxEmployees: '50',
+    features: ['Payroll Processing', 'Leave Management', 'Compensatory Off Management', 'Salary Increment', 'Bank Statement', 'Payroll MIS Reports'],
+    sections: ['Core HR', 'Compliance', 'Employee Self-Service', 'Additional Features'],
+    color: 'premium'
+  },
+  
+  {
+    type: 'Premium',
+    price: '9,999',
+    perEmployee: '₹100',
+    maxEmployees: '50',
+    features: ['Payroll Processing', 'Leave Management', 'Compensatory Off Management', 'Salary Increment', 'Bank Statement', 'Payroll MIS Reports'],
+    sections: ['Core HR', 'Compliance', 'Employee Self-Service', 'Additional Features'],
+    color: 'premium'
+  },
+  {
+    type: 'Regular',
+    price: '4,999',
+    perEmployee: '₹60',
+    maxEmployees: '50',
+    features: ['Payroll Processing', 'Leave Management', 'Compensatory Off Management', 'Salary Increment', 'Bank Statement', 'Payroll MIS Reports'],
+    sections: ['Core HR', 'Compliance', 'Employee Self-Service', 'Additional Features'],
+    color: 'regular',
+    recommended: true
+  },
+  {
+    type: 'Regular',
+    price: '4,999',
+    perEmployee: '₹60',
+    maxEmployees: '50',
+    features: ['Payroll Processing', 'Leave Management', 'Compensatory Off Management', 'Salary Increment', 'Bank Statement', 'Payroll MIS Reports'],
+    sections: ['Core HR', 'Compliance', 'Employee Self-Service', 'Additional Features'],
+    color: 'regular',
+    recommended: true
+  },
+  {
+    type: 'Premium',
+    price: '9,999',
+    perEmployee: '₹100',
+    maxEmployees: '50',
+    features: ['Payroll Processing', 'Leave Management', 'Compensatory Off Management', 'Salary Increment', 'Bank Statement', 'Payroll MIS Reports'],
+    sections: ['Core HR', 'Compliance', 'Employee Self-Service', 'Additional Features'],
+    color: 'premium'
+  },
+  {
+    type: 'Premium',
+    price: '9,999',
+    perEmployee: '₹100',
+    maxEmployees: '50',
+    features: ['Payroll Processing', 'Leave Management', 'Compensatory Off Management', 'Salary Increment', 'Bank Statement', 'Payroll MIS Reports'],
+    sections: ['Core HR', 'Compliance', 'Employee Self-Service', 'Additional Features'],
+    color: 'premium'
+  }
+];
 
 const Priceing = () => {
   return (
     <div className="pricing-container">
-      <div className="pricing-header">
-        <h1>Pricing Plans</h1>
-      </div>
-
-      {/* First Row - Two Columns for "Salary Books" and "Final Payroll" */}
-      <div className="pricing-row">
-        <div className="pricing-column">
-          <h2>Salary Books</h2>
+      {plans.map((plan, index) => (
+        <div
+          className={`card ${plan.color} ${plan.recommended ? 'recommended' : ''}`}
+          key={index}
+        >
+          {plan.recommended && <div className="badge">Recommended</div>}
+          <div className="card-header">{plan.type}</div>
+          <div className="price">₹ {plan.price}<span>/month</span></div>
+          <p className="sub-text">
+            (Up to {plan.maxEmployees} employees)<br />
+            {plan.perEmployee}/month (Per additional employee)
+          </p>
+          <ul>
+            <li><strong>Payroll</strong></li>
+            {plan.features.map((feature, i) => (
+              <li key={i}>✔ {feature}</li>
+            ))}
+          </ul>
+          <ul>
+            {plan.sections.map((section, i) => (
+              <li key={i}><strong>{section}</strong></li>
+            ))}
+          </ul>
+          <button className="cta">START FREE TRIAL</button>
         </div>
-        <div className="pricing-column">
-          <h2>Final Payroll</h2>
-        </div>
-      </div>
-
-      {/* Second Row - All 6 Cards in One Row */}
-      <div className="pricing-row">
-        {/* First Column - Three Cards under Salary Books */}
-        <div className="pricing-column">
-          <div className="pricing-card basic">
-            <h2>Basic</h2>
-            <p>₹ 4250 / Month</p>
-            <p>For 50 Users</p>
-            <p>Additional User ₹85/Month</p>
-            <div className="features">
-              <ul>
-                <li>Core HR</li>
-                <li>Multi-legal entity</li>
-                <li>Time Office</li>
-                <li>Geo-tagging/fencing</li>
-                <li>Selfie-attendance</li>
-               
-              </ul>
-            </div>
-          </div>
-
-          <div className="pricing-card professional">
-            <h2>Professional</h2>
-            <p>₹ 5750 / Month</p>
-            <p>For 50 Users</p>
-            <p>Additional User ₹115/Month</p>
-            <div className="features">
-              <ul>
-                <li>Everything in Basic+</li>
-                <li>Workforce</li>
-                <li>Onboarding (pre/post)</li>
-                <li>Induction</li>
-                <li>Confirmation</li>
-                <li>Transfer</li>
-                <li>Separation</li>
-                <li>Digital acknowledgement of letters/policies</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="pricing-card enterprise">
-            <h2>Enterprise</h2>
-            <p>Custom</p>
-            <p>For 50+ Team</p>
-            <p>Get a Quote As Per Your Selection</p>
-            <div className="features">
-              <ul>
-                <li>Everything in Professional+</li>
-                <li>Recruitment</li>
-                <li>Performance</li>
-                <li>Engagement</li>
-                <li>Expense</li>
-                <li>Asset</li>
-                <li>Helpdesk</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        {/* Second Column - Three Cards under Final Payroll */}
-        <div className="pricing-column">
-          <div className="pricing-card enterprise">
-            <h2>Enterprise</h2>
-            <p>Custom</p>
-            <p>For 50+ Team</p>
-            <p>Get a Quote As Per Your Selection</p>
-            <div className="features">
-              <ul>
-                <li>Everything in Professional+</li>
-                <li>Recruitment</li>
-                <li>Performance</li>
-                <li>Engagement</li>
-                <li>Expense</li>
-                <li>Asset</li>
-                <li>Helpdesk</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="pricing-card enterprise">
-            <h2>Enterprise</h2>
-            <p>Custom</p>
-            <p>For 50+ Team</p>
-            <p>Get a Quote As Per Your Selection</p>
-            <div className="features">
-              <ul>
-                <li>Everything in Professional+</li>
-                <li>Recruitment</li>
-                <li>Performance</li>
-                <li>Engagement</li>
-                <li>Expense</li>
-                <li>Asset</li>
-                <li>Helpdesk</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="pricing-card enterprise">
-            <h2>Enterprise</h2>
-            <p>Custom</p>
-            <p>For 50+ Team</p>
-            <p>Get a Quote As Per Your Selection</p>
-            <div className="features">
-              <ul>
-                <li>Everything in Professional+</li>
-                <li>Recruitment</li>
-                <li>Performance</li>
-                <li>Engagement</li>
-                <li>Expense</li>
-                <li>Asset</li>
-                <li>Helpdesk</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      ))}
     </div>
   );
 };
