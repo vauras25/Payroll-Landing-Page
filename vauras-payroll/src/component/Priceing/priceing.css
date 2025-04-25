@@ -1,3 +1,10 @@
+.pricing-photo{
+   width: 15%;
+}
+
+/* .pricing-head{
+  background-color: white;
+} */
 /* Pricing container */
 .pricing-container {
   display: flex;
@@ -66,24 +73,27 @@
   width: 16%;
 }
 
+.regular:hover{
+  /* width: 18%; */
+}
 /* Pricing */
 .pricing-price {
   font-size: 28px;
   font-weight: bold;
-  color: #2d2d2d;
+  color: black;
   margin: 10px 0;
 }
 
 .pricing-price span {
   font-size: 14px;
-  color: #555;
+  color: black;
 }
 
 /* Sub text under price */
 .pricing-sub-text {
   text-align: center;
   font-size: 14px;
-  color: #555;
+  color: black;
   margin-bottom: 10px;
 }
 
