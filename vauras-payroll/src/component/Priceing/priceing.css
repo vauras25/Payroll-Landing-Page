@@ -8,7 +8,211 @@
 /* Pricing container */
 .pricing-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .pricing-card {
+    
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .pricing-card.premium1 {
+    border: 2px solid #8ecafd; /* Gold border */
+    width: 16%;
+    background-color: #f1f1f1;
+  }
+  
+  .pricing-card.premium1:hover {
+    border: 2px solid #8ecafd; /* Gold border */
+    background-color: #f1f1f1;
+    z-index: 2;
+    transform: scale(1.10); 
+  }
+  .pricing-card.premium2 {
+    border: 2px solid #8ecafd; /* Gold border */
+    width: 16%;
+    background-color: #f1f1f1;
+  }
+  .pricing-card.premium2:hover {
+    border: 2px solid #8ecafd; /* Gold border */
+    background-color: #f1f1f1;
+    z-index: 2;
+    transform: scale(1.10); 
+  }
+  .pricing-card.premium3 {
+    border: 2px solid #8ecafd; /* Gold border */
+    width: 16%;
+    background-color: #f1f1f1;
+  }
+  .pricing-card.premium3:hover {
+    border: 2px solid #8ecafd; /* Gold border */
+    background-color: #f1f1f1;
+    z-index: 2;
+    transform: scale(1.10); 
+  }
+  .pricing-card.premium4 {
+    border: 2px solid #8ecafd; /* Gold border */
+    width: 16%;
+    background-color: #f1f1f1;
+  }
+  .pricing-card.premium4:hover {
+    border: 2px solid #8ecafd; /* Gold border */
+    background-color: #f1f1f1;
+    z-index: 2;
+    transform: scale(1.10); 
+  }
+  
+  .pricing-card-header.regular1{
+    color: white;
+  }
+  .pricing-card.regular1 {
+    
+    border: 2px solid #8ecafd; /* Green border */
+    width: 16%;
+    background-color: #53ade1;
+  }
+  .pricing-card.regular1:hover {
+    
+    border: 2px solid #070304; /* Green border */
+    background-color: #53ade1;
+    z-index: 2;
+    transform: scale(1.10); 
+  }
+  .pricing-card.regular2 {
+    
+    border: 2px solid #8ecafd; /* Green border */
+    width: 16%;
+    background-color: #53ade1;
+  }
+  .pricing-card.regular2:hover {
+    
+    border: 2px solid #070304; /* Green border */
+    width: 16%;
+    background-color: #53ade1;
+    z-index: 2;
+    transform: scale(1.10);
+  }
+  .pricing-card-name{
+    color: white;
+    position: relative;
+    top: -35px;
+  }
+  .recommended {
+    border-color: #4CAF50;
+  }
+  
+  .badge {
+    background: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 0 0 8px 8px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .pricing-photo {
+    width: 26px;
+    margin-bottom: 10px;
+    margin-left: -177px;
+  }
+  
+  .pricing-card-header {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .pricing-price {
+    font-size: 30px;
+    color: #000000;
+  }
+  
+  .pricing-price span {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .pricing-sub-text {
+    font-size: 14px;
+    color: #030202;
+  }
+  
+  .pricing-head {
+    margin-top: 20px;
+  }
+  
+  .toggle-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    text-align: left;
+    padding: 10px 30px 10px 10px;
+    margin-bottom: 5px;
+  }
+  
+  .toggle-button::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="%23000" stroke-width="3" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+  }
+  
+  .toggle-button.expanded::after {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  
+  .features-list {
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .features-list li {
+    margin-bottom: 5px;
+  }
+  
+  .cta-button {
+    background: #E3000F;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s;
+  }
+  
+  .cta-button:hover {
+    background: rgb(168, 57, 57);
+  }
+  
   gap: 10px;
   justify-content: center;
   padding: 40px 20px;
@@ -59,19 +263,10 @@
 
 
 /* Regular card */
-.regular {
-  background: #53ade1;
-  color: white;
-  width: 16%;
-}
+
 
 /* Premium card */
-.premium {
-  background: #f1f1f1;
-  color: #5c5c5c;
-  border: 1px solid #aaa;
-  width: 16%;
-}
+
 
 .regular:hover{
   /* width: 18%; */
