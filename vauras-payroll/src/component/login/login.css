@@ -1,241 +1,233 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  /* Removed overflow: hidden here to allow page scrolling globally */
+}
+
+/* Login Container */
 .login-container {
-    display: flex;
-    height: 100vh;
-    flex-direction: row;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden; /* Disable scroll ONLY for login page */
+  flex-direction: row;
+}
+
+/* Left Panel */
+.left-panel, .right-panel {
+  flex: 1;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-panel {
+  background-color: #00508B;
+}
+
+.illustration {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.illustration img {
+  width: 28%;
+  max-width: 300px;
+  height: auto;
+  margin-top: -63px;
+}
+
+.loginp {
+  color: #f9eeee;
+  text-align: justify;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 600px;
+}
+
+.loginp h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: -15px;
+}
+
+.loginp p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* Right Panel */
+.right-panel {
+  text-align: center;
+  align-items: center;
+}
+
+.logo {
+  width: 40%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  margin-top: -30px;
+}
+
+.right-panel h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.right-panel p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.right-panel input[type="text"],
+.right-panel input[type="password"] {
+  width: 60%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+}
+
+.checkbox-row {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.checkbox-row input {
+  margin-right: 8px;
+}
+
+.sign-in-btn {
+  width: 60%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #e30613;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sign-in-btn:hover {
+  background-color: #b40010;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  html, body {
+    overflow: auto; /* Allow scroll for smaller screens */
   }
-  
-  .left-panel {
-    flex: 1;
-    background-color: #00508B;
-    display: flex;
+
+  .login-container {
     flex-direction: column;
-    justify-content: center;
-    padding: 40px 20px;
+    height: auto;
+    overflow: auto; /* Allow scroll if needed */
   }
-  
-  .illustration {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .illustration img {
-    width: 35%;
-    max-width: 300px;
-  }
-  
-  .loginp {
-    color: #f9eeee;
-    text-align: justify;
-  }
-  
-  /* Desktop-specific paragraph width */
-  @media (min-width: 1025px) {
-    .loginp {
-      width: 55%;
-      margin: 0 auto;
-    }
-  }
-  
-  .loginp h2 {
-    text-align: center;
-    color: #f9eeee;
-  }
-  
-  .loginp p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
+
+  .left-panel,
   .right-panel {
-    flex: 1;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 20px;
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
   }
-  
+
   .logo {
-    width: 41%;
-    margin-bottom: 20px;
+    width: 50%;
   }
-  
-  .right-panel h3 {
-    margin-top: 20px;
-  }
-  
-  .right-panel p {
-    margin-bottom: 25px;
-    font-size: 14px;
-    color: #333;
-  }
-  
+
   .right-panel input[type="text"],
-  .right-panel input[type="password"] {
-    width: 53%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #aaa;
-    border-radius: 11px;
+  .right-panel input[type="password"],
+  .sign-in-btn {
+    width: 80%;
   }
-  
+
   .checkbox-row {
     width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 10px auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .illustration img {
+    width: 70%;
+    max-width: 250px;
+  }
+
+  .loginp {
+    width: 90%;
+  }
+
+  .loginp h2 {
+    font-size: 20px;
+  }
+
+  .loginp p {
     font-size: 14px;
-    margin-left: 24%;
   }
-  
-  .checkbox-row input {
-    margin-right: 8px;
+
+  .logo {
+    width: 60%;
   }
-  
+
+  .right-panel h3 {
+    font-size: 20px;
+  }
+
+  .right-panel p {
+    font-size: 13px;
+  }
+
+  .right-panel input[type="text"],
+  .right-panel input[type="password"],
   .sign-in-btn {
-    width: 53%;
-    padding: 12px;
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .checkbox-row {
+    width: 90%;
+    font-size: 13px;
+  }
+}
+
+/* Smallest Devices */
+@media (max-width: 480px) {
+  .logo {
+    width: 70%;
     margin-top: 10px;
-    background-color: #e30613;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-weight: bold;
-    cursor: pointer;
   }
-  
-  .sign-in-btn:hover {
-    background-color: #b40010;
+
+  .illustration img {
+    width: 90%;
+    margin-top: -3px;
   }
-  
-  /* Tablet */
-  @media (max-width: 1024px) {
-    .login-container {
-      flex-direction: column;
-      height: auto;
-    }
-  
-    .left-panel,
-    .right-panel {
-      width: 100%;
-      height: auto;
-      padding: 40px 20px;
-    }
-  
-    .logo {
-      width: 50%;
-      margin-top: 40px;
-    }
-  
-    .loginp {
-      width: 90%;
-      margin: 0 auto;
-    }
+
+  .loginp h2,
+  .right-panel h3 {
+    font-size: 18px;
   }
-  
-  /* Mobile */
-  @media (max-width: 768px) {
-    .login-container {
-      flex-direction: column;
-      height: auto;
-    }
-  
-    .left-panel,
-    .right-panel {
-      width: 100%;
-      padding: 30px 20px;
-      text-align: center;
-    }
-  
-    .logo {
-      width: 60%;
-      margin: 0 auto 20px auto;
-    }
-  
-    .illustration {
-      margin-top: 20px;
-    }
-  
-    .illustration img {
-      width: 80%;
-      max-width: 250px;
-    }
-  
-    .loginp {
-      width: 90%;
-      margin: 20px auto;
-    }
-  
-    .loginp h2 {
-      font-size: 22px;
-    }
-  
-    .loginp p {
-      font-size: 14px;
-      line-height: 1.5;
-    }
-  
-    .right-panel h3 {
-      font-size: 20px;
-      margin-top: 20px;
-    }
-  
-    .right-panel p {
-      font-size: 13px;
-      margin-bottom: 20px;
-    }
-  
-    .right-panel input[type="text"],
-    .right-panel input[type="password"],
-    .sign-in-btn {
-      width: 90%;
-      font-size: 14px;
-    }
-  
-    .checkbox-row {
-      width: 90%;
-      margin: 15px auto;
-      font-size: 13px;
-      justify-content: flex-start;
-    }
-  
-    .checkbox-row input {
-      margin-right: 6px;
-    }
+
+  .loginp p,
+  .right-panel p {
+    font-size: 13px;
   }
-  
-  /* Extra small mobile */
-  @media (max-width: 480px) {
-    .logo {
-      width: 70%;
-      margin-top: 20px;
-    }
-  
-    .illustration img {
-      width: 90%;
-    }
-  
-    .loginp h2,
-    .right-panel h3 {
-      font-size: 20px;
-    }
-  
-    .loginp p,
-    .right-panel p {
-      font-size: 13px;
-    }
-  
-    .right-panel input[type="text"],
-    .right-panel input[type="password"],
-    .sign-in-btn {
-      width: 95%;
-    }
-  
-    .checkbox-row {
-      flex-direction: row;
-      align-items: flex-start;
-    }
+
+  .right-panel input[type="text"],
+  .right-panel input[type="password"],
+  .sign-in-btn {
+    width: 95%;
   }
-  
+}
