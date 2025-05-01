@@ -137,7 +137,7 @@ const Pricing = () => {
                   <ul className="features-list">
                     {section.features.length > 0 ? (
                       section.features.map((feature, featIndex) => (
-                        <li key={featIndex}>✔ {feature}</li>
+                        <li key={featIndex}><li className="tik">✔ </li> {feature}</li>
                       ))
                     ) : (
                       <li>No features available.</li>
