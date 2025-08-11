@@ -1,8 +1,63 @@
-import React from "react";
+import React , { useState } from "react";
 import "./style.css";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
+    const [formData, setFormData] = useState({
+    name: "",
+    company: "",
+    phone: "",
+    email: "",
+    employees: "",
+    question: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const { name, company, phone } = formData;
+
+    if (!name || !company || !phone) {
+      alert("Please fill in all required fields: Name, Company Name, and Phone Number.");
+      return;
+    }
+
+    try {
+      const response = await fetch("http://localhost:5000/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        alert("  submitted.");
+        setFormData({
+          name: "",
+          company: "",
+          phone: "",
+          email: "",
+          employees: "",
+          question: "",
+        });
+      } else {
+        alert(` Something went wrong: ${data.error || "Please try again."}`);
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("Error submitting form");
+    }
+  };
   return (
     <div className="contact-container">
       <div className="contact-header">
@@ -13,24 +68,24 @@ const Contact = () => {
           <p className="contact-description">
             Contact us about anything related to our company or services. We'll do our best to get back to you as soon as possible.
           </p>
-          <form>
+          <form onSubmit={handleSubmit}>
             <label>Your Name *</label>
-            <input type="text" placeholder="Enter your name" required />
+            <input type="text" name="name" placeholder="Enter your name"   value={formData.name} onChange={handleChange} required />
 
             <label>Company Name *</label>
-            <input type="text" placeholder="Enter company name" required />
+            <input type="text" name="company" placeholder="Enter company name"  value={formData.company} onChange={handleChange}  required />
 
             <label>Phone Number *</label>
-            <input type="tel" placeholder="+91" required />
+            <input type="tel"  name="phone" placeholder="+91" value={formData.phone} onChange={handleChange} required />
 
             <label>Your Email</label>
-            <input type="email" placeholder="Enter your email" />
+            <input type="email" name="email" placeholder="Enter your email"  value={formData.email} onChange={handleChange} />
 
             <label>No. of Employees</label>
-            <input type="number" placeholder="Number of employees" />
+            <input type="number"  name="employees" placeholder="Number of employees"  value={formData.employees} onChange={handleChange}/>
 
             <label>Your Question</label>
-            <textarea placeholder="Write your question here"></textarea>
+            <textarea   name="question" placeholder="Write your question here"  value={formData.question} onChange={handleChange}></textarea>
 
             <button type="submit">Submit</button>
           </form>
@@ -62,3 +117,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+
+
