@@ -23,7 +23,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
 
-    e.preventDefault();
+    // e.preventDefault();
 
     const { name, company, phone } = formData;
 
@@ -71,7 +71,6 @@ const Contact = () => {
           <p className="contact-description">
             Contact us about anything related to our company or services. We'll do our best to get back to you as soon as possible.
           </p>
-          <form onSubmit={handleSubmit}>
             <label>Your Name *</label>
             <input type="text" name="name" placeholder="Enter your name"   value={formData.name} onChange={handleChange} required />
 
@@ -90,8 +89,8 @@ const Contact = () => {
             <label>Your Question</label>
             <textarea   name="question" placeholder="Write your question here"  value={formData.question} onChange={handleChange}></textarea>
 
-            <button type="submit">Submit</button>
-          </form>
+            {/* <button type="submit">Submit</button> */}
+             <button type="button" onClick={handleSubmit}>Submit</button>
         </div>
         <div className="contact-info">
           <h3>Reach us:</h3>
