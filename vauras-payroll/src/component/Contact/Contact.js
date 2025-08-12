@@ -64,7 +64,7 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <div className="contact-header">
-        <h1>Contact us</h1>
+         <h1>Contact us aman</h1>
       </div>
       <div className="contact-content">
         <div className="contact-form">
@@ -119,6 +119,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
 
 
 
