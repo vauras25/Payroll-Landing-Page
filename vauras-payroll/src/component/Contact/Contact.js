@@ -44,7 +44,7 @@ const Contact = () => {
       const data = await response.json();
 
       if (response.ok) {
-        alert("  submitted.");
+        // alert("  submitted.");
         setFormData({
           name: "",
           company: "",
@@ -71,7 +71,7 @@ const Contact = () => {
           <p className="contact-description">
             Contact us about anything related to our company or services. We'll do our best to get back to you as soon as possible.
           </p>
-          <form >
+          <form onSubmit={handleSubmit}>
             <label>Your Name *</label>
             <input type="text" name="name" placeholder="Enter your name"   value={formData.name} onChange={handleChange} required />
 
@@ -90,7 +90,7 @@ const Contact = () => {
             <label>Your Question</label>
             <textarea   name="question" placeholder="Write your question here"  value={formData.question} onChange={handleChange}></textarea>
 
-            <button type="submit" onClick={handleSubmit}>Submit</button>
+            <button type="submit">Submit</button>
           </form>
         </div>
         <div className="contact-info">
