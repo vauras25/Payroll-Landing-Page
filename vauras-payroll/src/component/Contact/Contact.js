@@ -22,19 +22,19 @@ const Contact = () => {
   };
 
   const handleSubmit = async (e) => {
-    alert(1)
+
     e.preventDefault();
-alert(2)
+
     const { name, company, phone } = formData;
-alert(3)
+
     if (!name || !company || !phone) {
       alert("Please fill in all required fields: Name, Company Name, and Phone Number.");
       return;
     }
-alert(4)
+
     try {
-      // const response = await fetch("http://localhost:5000/api/contact", {
-      alert(5)
+      // const response = await fetch("http://localhost:8080/contact", {
+
       const response = await fetch("https://contact.salarybooks.com/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -71,7 +71,7 @@ alert(4)
           <p className="contact-description">
             Contact us about anything related to our company or services. We'll do our best to get back to you as soon as possible.
           </p>
-          <form onSubmit={handleSubmit}>
+          <form >
             <label>Your Name *</label>
             <input type="text" name="name" placeholder="Enter your name"   value={formData.name} onChange={handleChange} required />
 
@@ -90,7 +90,7 @@ alert(4)
             <label>Your Question</label>
             <textarea   name="question" placeholder="Write your question here"  value={formData.question} onChange={handleChange}></textarea>
 
-            <button type="submit">Submit</button>
+            <button type="submit" onClick={handleSubmit}>Submit</button>
           </form>
         </div>
         <div className="contact-info">
