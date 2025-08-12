@@ -22,17 +22,19 @@ const Contact = () => {
   };
 
   const handleSubmit = async (e) => {
+    alert(1)
     e.preventDefault();
-
+alert(2)
     const { name, company, phone } = formData;
-
+alert(3)
     if (!name || !company || !phone) {
       alert("Please fill in all required fields: Name, Company Name, and Phone Number.");
       return;
     }
-
+alert(4)
     try {
       // const response = await fetch("http://localhost:5000/api/contact", {
+      alert(5)
       const response = await fetch("https://contact.salarybooks.com/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
