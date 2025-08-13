@@ -1,12 +1,15 @@
 import React, { useState, useEffect, useMemo } from "react";
 import "../App.css";
 import "./Dashboard.css";
-import sampleImage from "../image/logo11.jpg";
-import sampleImage1 from "../image/logo12.jpg";
-import sampleImage2 from "../image/logo13.jpg";
-import sampleImage3 from "../image/logo14.jpg";
-import sampleImage4 from "../image/logo15.jpg";
-import sampleImage5 from "../image/logo15.jpg";
+// import sampleImage from "../image/logo11.jpg";
+// import sampleImage1 from "../image/logo12.jpg";
+// import sampleImage2 from "../image/logo13.jpg";
+// import sampleImage3 from "../image/logo14.jpg";
+// import sampleImage4 from "../image/logo15.jpg";
+// import sampleImage5 from "../image/logo15.jpg";
+import sampleImage6 from "../image/SalaryBooks_App_UI_emp.jpg";
+import sampleImage7 from "../image/SalaryBooks_App_UI_geoo.jpg";
+import sampleImage8 from "../image/Desktop_80.jpg";
 
 import { Line } from "react-chartjs-2";
 import {
@@ -58,13 +61,16 @@ const GrowthChart = () => {
 };
 
 const imageList = [
-  { type: "image", src: sampleImage1 },
-  { type: "image", src: sampleImage2 },
-  { type: "chart" },
-  { type: "image", src: sampleImage },
-  { type: "image", src: sampleImage3 },
-  { type: "image", src: sampleImage4 },
-  { type: "image", src: sampleImage5 },
+  // { type: "image", src: sampleImage1 },
+  // { type: "image", src: sampleImage2 },
+  // { type: "chart" },
+  // { type: "image", src: sampleImage },
+  // { type: "image", src: sampleImage3 },
+  // { type: "image", src: sampleImage4 },
+  // { type: "image", src: sampleImage5 },
+  { type: "image", src: sampleImage8 },
+  { type: "image", src: sampleImage7 },
+  { type: "image", src: sampleImage6 },
 ];
 
 function Dashboard() {
@@ -72,10 +78,10 @@ function Dashboard() {
   const [wordIndex, setWordIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [animate, setAnimate] = useState(false);
-  const [,setPrevIndex] = useState(currentIndex);
-  const [direction, setDirection] = useState("right");
+  const [currentIndex] = useState(0);
+  const [animate] = useState(false);
+  // const [,setPrevIndex] = useState(currentIndex);
+  const [direction] = useState("right");
 
   useEffect(() => {
     const currentWord = words[wordIndex];
@@ -95,21 +101,21 @@ function Dashboard() {
     }
   }, [charIndex, wordIndex, words]);
 
-  const prevImage = () => {
-    setDirection("left");
-    setPrevIndex(currentIndex);
-    setCurrentIndex((prev) => (prev - 1 + imageList.length) % imageList.length);
-    setAnimate(false);
-    setTimeout(() => setAnimate(true), 10);
-  };
+  // const prevImage = () => {
+  //   setDirection("left");
+  //   setPrevIndex(currentIndex);
+  //   setCurrentIndex((prev) => (prev - 1 + imageList.length) % imageList.length);
+  //   setAnimate(false);
+  //   setTimeout(() => setAnimate(true), 10);
+  // };
 
-  const nextImage = () => {
-    setDirection("right");
-    setPrevIndex(currentIndex);
-    setCurrentIndex((prev) => (prev + 1) % imageList.length);
-    setAnimate(false);
-    setTimeout(() => setAnimate(true), 10);
-  };
+  // const nextImage = () => {
+  //   setDirection("right");
+  //   setPrevIndex(currentIndex);
+  //   setCurrentIndex((prev) => (prev + 1) % imageList.length);
+  //   setAnimate(false);
+  //   setTimeout(() => setAnimate(true), 10);
+  // };
 
   const getIndex = (offset) =>
     (currentIndex + offset + imageList.length) % imageList.length;
@@ -212,9 +218,9 @@ const positionNames = [
       </div>
 
       <div className="carousel">
-        <button className="carousel-arrow_left" onClick={prevImage}>
+        {/* <button className="carousel-arrow_left" onClick={prevImage}>
           &#8249;
-        </button>
+        </button> */}
 
         {positions.map((offset, idx) =>
           renderItem(imageList[getIndex(offset)], positionNames[idx], getIndex(offset))
@@ -223,9 +229,9 @@ const positionNames = [
        
 
 
-        <button className="carousel-arrow_right" onClick={nextImage}>
+        {/* <button className="carousel-arrow_right" onClick={nextImage}>
           &#8250;
-        </button>
+        </button> */}
       </div>
     </div>
   );

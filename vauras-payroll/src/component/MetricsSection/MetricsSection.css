@@ -16,7 +16,26 @@
     z-index: 2;
     pointer-events: none;
   }
-  
+  .metrics-sectioin-grid {
+    display: flex;
+    justify-content: center;
+    gap: 121px;
+    margin-bottom: 30px;
+  }
+  .metric-section-item {
+   text-align: center;
+  }
+
+  .metric-section-item h2 {
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .metric-section-item p {
+    font-size: 14px;
+    margin-top: 5px;
+  }
 .subtext_metrics {
   font-size: 16px;
   color: #333;
@@ -36,7 +55,7 @@
   .logo-track {
     display: flex;
     width: fit-content;
-    animation: scrollTrack 20s linear infinite;
+    animation: scrollTrack 50s linear infinite;
   }
   
   .logo-container {
@@ -75,12 +94,17 @@
       max-width: 80px;
     }
   }
-  
+  .metrics-section-grid {
+    gap: 20px;
+  }
   @media (max-width: 480px) {
     .logo-container {
       gap: 10px;
     }
-  
+    .metrics-section-grid {
+      gap: 10px;
+      flex-direction: column; /* Stack the items vertically */
+    }
     .logo-container img {
       max-width: 70px;
     }

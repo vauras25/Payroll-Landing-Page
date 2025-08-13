@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef, useCallback ,useMemo} from "react";
 import "../MetricsSection/MetricsSection.css";
-import logo1 from './image/logo1.svg';
-import logo2 from './image/logo2.svg';
-import logo3 from './image/logo3.svg';
-import logo4 from './image/logo4.svg';
-import logo5 from './image/logo5.svg';
-import logo6 from './image/logo6.svg';
-import logo7 from './image/logo7.svg';
-
+// import logo1 from './image/logo1.svg';
+// import logo2 from './image/logo2.svg';
+// import logo3 from './image/logo3.svg';
+// import logo4 from './image/logo4.svg';
+// import logo5 from './image/logo5.svg';
+// import logo6 from './image/logo6.svg';
+// import logo7 from './image/logo7.svg';
+import companyLogos from './loadLogos';
 const MetricsSection = () => {
   const [isInView, setIsInView] = useState(false);
   const metricsRef = useRef(null);
@@ -72,7 +72,7 @@ const MetricsSection = () => {
   // };
 
   const handleCountUp = useCallback((target) => {
-    const elements = target.querySelectorAll('.metric-item h2');
+    const elements = target.querySelectorAll('.metric-section-item h2');
     elements.forEach((el, index) => {
       let start = 0;
       const end = metricsData[index].value;
@@ -86,7 +86,7 @@ const MetricsSection = () => {
           clearInterval(interval);
           el.textContent = `${end.toLocaleString()}${suffix}`; 
         } else {
-          el.textContent = `${start.toLocaleString()}`; 
+          el.textContent = `${start.toLocaleString()}${suffix}`; 
         }
       }, 100);
     });
@@ -111,7 +111,7 @@ const MetricsSection = () => {
       handleCountUp(metricsRef.current);
     }
   }, [isInView , handleCountUp]);
-  const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7,logo1, logo2, logo3, logo4, logo5, logo6, logo7];
+  // const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7,logo1, logo2, logo3, logo4, logo5, logo6, logo7];
 
 
 
@@ -123,9 +123,9 @@ const MetricsSection = () => {
       <p className="subtext_metrics">
         Your trusted partner in compliance and employee satisfaction.
       </p>
-      <div className="metrics-grid">
+      <div className="metrics-sectioin-grid">
         {metricsData.map((metric, index) => (
-          <div className="metric-item" key={index}>
+          <div className="metric-section-item" key={index}>
             <h2>0</h2>
             <p>{metric.label}</p>
           </div>
@@ -155,11 +155,11 @@ const MetricsSection = () => {
       <div className="logo-wrapper">
         <div className="logo-track">
           <div className="logo-container">
-            {logos.map((logo, index) => (
+            {companyLogos.map((logo, index) => (
               <img key={index} src={logo} alt={`logo-${index}`} />
             ))}
-            {logos.map((logo, index) => (
-              <img key={index + logos.length} src={logo} alt={`logo-duplicate-${index}`} />
+            {companyLogos.map((logo, index) => (
+              <img key={index + companyLogos.length} src={logo} alt={`logo-duplicate-${index}`} />
             ))}
           </div>
         </div>
