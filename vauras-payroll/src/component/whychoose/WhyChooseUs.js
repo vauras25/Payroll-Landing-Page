@@ -2,7 +2,7 @@ import React from "react";
 import "./WhyChooseUs.css";
 import img1 from "../../image/img1.png"; // Replace with actual image paths
 import img2 from "../../image/img2.png";
-import img3 from "../../image/img3.png";
+// import img3 from "../../image/img3.png";
 
 const WhyChooseUs = () => {
   return (
