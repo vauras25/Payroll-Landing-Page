@@ -1,0 +1,109 @@
+.features-container {
+  display: flex;
+  background-color: #eaf7fb;
+  padding: 30px;
+  gap: 40px;
+  border: 1px solid #ccc;
+  margin: auto;
+  width: 60%;
+}
+
+.features-menu {
+  flex: 1;
+  font-family: Arial, sans-serif;
+}
+
+.menu-section {
+  margin-bottom: 20px;
+}
+
+.menu-section h3 {
+  color: #0a3b77;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.menu-section ul {
+  list-style-type: none;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.menu-section ul li {
+  font-size: 14px;
+  color: #222;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.menu-section ul li::before {
+  content: "•";
+  color: black;
+  position: absolute;
+  left: -12px;
+}
+
+/* Right icon section */
+.features-icons {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-card {
+  background: #fff;
+  padding: 25px;
+  width: 160px;
+  height: 160px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon-card .icon {
+  font-size: 48px;
+  color: #0a3b77;
+  margin-bottom: 10px;
+}
+
+.icon-card h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0a3b77;
+}
+
+.fratures_head{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.reports_img {
+  display: flex;
+  flex-direction: row;  /* place side by side */
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* align vertically if heights match */
+  gap: 71px;     
+  background-color: #f4f8fc;          /* space between the images */
+}
+
+.reports_img img {
+  width: 467px;
+  height: 650px;
+  object-fit: cover; /* keep aspect ratio */
+}
+
+.right_img{
+  width: 450px;
+  height: 650px;
+}
+.reports_head{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 45px;
+    margin-bottom: 24px;
+}
