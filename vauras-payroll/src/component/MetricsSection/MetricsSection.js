@@ -22,10 +22,11 @@ const MetricsSection = () => {
 
 
   const metricsData = useMemo(() => [
-    { label: "Employees Managed", value: 20000 , suffix:"+" },
-    { label: "Clients Managed", value: 400 , suffix:"+" },
-    { label: "Handled", value: 375 ,suffix:" Cr" },
-    { label: "Team Size", value: 50 , suffix:"+" },
+    { label: "LEGACY", value: 20 , suffix:"+ Years" },
+    { label: "EMPLOYEES MANAGED", value: 30000 , suffix:"+" },
+    { label: "CLIENTS SERVED", value: 350 ,suffix:"+" },
+    { label: " TEAM STRENGTH", value: 40 , suffix:"+" },
+    { label: " CTC HANDLED", value:  275 , suffix:"CR+" }, 
   ], []);
 
   
@@ -117,9 +118,11 @@ const MetricsSection = () => {
   return (
     <div className="metrics-container" ref={metricsRef}>
       <p className="metrics-header">
-        Time tracking & productivity metrics trusted by 112,000+ businesses
+         MORE THAN A PAYROLL SOFTWARE
       </p>
-
+      <p className="subtext_metrics">
+        Your trusted partner in compliance and employee satisfaction.
+      </p>
       <div className="metrics-grid">
         {metricsData.map((metric, index) => (
           <div className="metric-item" key={index}>

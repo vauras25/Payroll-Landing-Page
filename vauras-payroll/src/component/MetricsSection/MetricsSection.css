@@ -17,6 +17,11 @@
     pointer-events: none;
   }
   
+.subtext_metrics {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 35px;
+}
   .logo-wrapper::before {
     left: 0;
     background: linear-gradient(to right, #f4f8fc, rgba(255, 255, 255, 0));
