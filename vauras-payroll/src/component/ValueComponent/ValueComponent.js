@@ -59,15 +59,15 @@ const ValueComponent = () => {
     //     return () => clearInterval(interval); // Cleanup interval on component unmount
     // }, [selectedRole, currentIndex]); // Removed 'roles' as it’s memoized and won’t change
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            // Move to the next role, loop back to the start if at the last role
-            const nextIndex = (currentIndex + 1) % roles.length;
-            setSelectedRole(roles[nextIndex].name);
-        }, 6000);
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         // Move to the next role, loop back to the start if at the last role
+    //         const nextIndex = (currentIndex + 1) % roles.length;
+    //         setSelectedRole(roles[nextIndex].name);
+    //     }, 6000);
     
-        return () => clearInterval(interval); // Cleanup interval on component unmount
-    }, [roles, currentIndex]);
+    //     return () => clearInterval(interval); // Cleanup interval on component unmount
+    // }, [roles, currentIndex]);
 
     return (
         <div className="value-container">
@@ -99,21 +99,25 @@ const ValueComponent = () => {
                     <div className="content-container">
                         <div className="left-section">
                             <div className="info-box without-greyhr">
-                                <h3>Without greyHR</h3>
-                                <ul>
-                                    <li>Data security concerns and system compatibility issues.</li>
-                                    <li>Low user adoption rates.</li>
-                                    <li>No guided implementation.</li>
-                                </ul>
+                                <div className="box-header text-center">SalaryBooks waale</div>
+                             <ul>
+                                <li><strong>Total Payroll Clarity</strong> – Everyone sees exactly what they need, fostering trust and alignment.</li>
+                                <li><strong>Zero Risk of Costly Errors</strong> – Block unauthorized changes before they impact payouts or compliance.</li>
+                                <li><strong>Decisions at a Glance</strong> – Clear, concise payroll insights so you can act fast and confidently.</li>
+                                <li><strong>One Report, Full Story</strong> – From onboarding to final payout, track the entire payroll cycle in a single view.</li>
+                                <li><strong>Freedom to Run Payroll Anywhere</strong> – Approve, review, and manage payroll from any device, any location.</li>
+                             </ul>
                             </div>
 
                             <div className="info-box with-greyhr">
-                                <h3>With greyHR</h3>
-                                <p>
-                                    ✅ No compliance nightmares! greyHR’s own implementation team works
-                                    with your IT, ensuring seamless implementation and integration of HR
-                                    tech, with the assurance of data security and scalability.
-                                </p>
+                               <div className="box-header text-center">Excel Waale</div>
+                                <ul>
+                                    <li>Payroll feels like a monthly fire drill, pulling you away from running the business.</li>
+                                    <li>Sensitive data lives in too many places, increasing the risk of leaks or misuse.</li>
+                                    <li>Every decision requires digging through spreadsheets and chasing down numbers.</li>
+                                    <li>Reports arrive late or in inconsistent formats, making audits a headache.</li>
+                                    <li>Remote approvals and quick fixes are impossible, forcing unnecessary office visits.</li>
+                                </ul>
                             </div>
                         </div>
 
