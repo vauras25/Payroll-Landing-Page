@@ -48,7 +48,7 @@
   margin: 0 15px;
 }
 
-.nav-link {
+.nav-link1 {
   color: rgb(3, 3, 3);
   text-decoration: none;
   font-size: 16px;
@@ -59,15 +59,29 @@
   padding-bottom: 2px;
 }
 
-.nav-link:hover {
+.nav-link1:hover {
   color: #746ed1;
 }
 
 /* Active underline style */
-.nav-link.active {
+.nav-link1.active {
   border-bottom: 3px solid #3175e0;
   color: black;
   border-radius: 3px;
+}
+
+.login-btn {
+  background-color: #007bff; /* Logo blue */
+  color: #fff !important;
+  padding: 10px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #001380; /* Slightly darker on hover */
+  color: #fff !important;
 }
 
 /* Responsive Design */
@@ -99,7 +113,7 @@
     margin: 10px 0;
   }
 
-  .nav-link {
+  .nav-link1 {
     font-size: 18px;
   }
 }
