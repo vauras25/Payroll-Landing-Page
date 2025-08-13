@@ -1,5 +1,5 @@
 import React from "react";
-import "./Practical_Features.css";
+import "./PracticalFeatures.css";
 import { FaUserCog, FaChartBar, FaFileInvoiceDollar, FaUsersCog, FaCogs, FaCalendarAlt, FaMoneyCheckAlt, FaCheckCircle, FaClock, FaRupeeSign ,FaLayerGroup , FaMobileAlt,FaCalculator,FaRegClock,FaFolderOpen} from "react-icons/fa";
 
 const features = [
