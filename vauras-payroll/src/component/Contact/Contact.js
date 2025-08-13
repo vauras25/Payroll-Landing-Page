@@ -64,7 +64,7 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <div className="contact-header">
-        <h2 class="text-center">Contact us</h2>
+        <h2 className="text-center">Contact us</h2>
       </div>
       <div className="contact-content">
         {/* This is the single parent container */}
