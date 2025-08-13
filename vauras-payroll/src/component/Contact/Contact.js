@@ -71,7 +71,8 @@ const Contact = () => {
           <p className="contact-description">
             Contact us about anything related to our company or services. We'll do our best to get back to you as soon as possible.
           </p>
-          <form onSubmit={handleSubmit}>
+          {/* <form > */}
+          <div className="form">
             <label>Your Name *</label>
             <input type="text" name="name" placeholder="Enter your name"   value={formData.name} onChange={handleChange} required />
 
@@ -91,8 +92,10 @@ const Contact = () => {
             <textarea   name="question" placeholder="Write your question here"  value={formData.question} onChange={handleChange}></textarea>
 
             {/* <button type="submit">Submit</button> */}
-             <button type="button">Submit</button>
-          </form>
+             {/* <button type="button" onSubmit={handleSubmit}>Submit</button> */}
+              <button type="button" onClick={handleSubmit}>Submit</button>
+              </div>
+          {/* </form> */}
         </div>
         <div className="contact-info">
           <h3>Reach us:</h3>
