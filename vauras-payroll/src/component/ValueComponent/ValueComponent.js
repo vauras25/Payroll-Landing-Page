@@ -39,10 +39,10 @@ const ValueComponent = () => {
 
 
     const roles = useMemo(() => [
-        { name: "CIO", img: valuepic1 },
-        { name: "CHRO", img: valuepic2 },
-        { name: "Payroll Admin", img: valuepic3 },
+        { name: "Founder", img: valuepic1 },
         { name: "Managers", img: valuepic4 },
+        { name: "Payroll Admin", img: valuepic3 },
+        { name: "Accounts", img: valuepic2 },
         { name: "Employees", img: valuepic5 },
     ], []);
     
@@ -59,15 +59,15 @@ const ValueComponent = () => {
     //     return () => clearInterval(interval); // Cleanup interval on component unmount
     // }, [selectedRole, currentIndex]); // Removed 'roles' as it’s memoized and won’t change
 
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //         // Move to the next role, loop back to the start if at the last role
-    //         const nextIndex = (currentIndex + 1) % roles.length;
-    //         setSelectedRole(roles[nextIndex].name);
-    //     }, 6000);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            // Move to the next role, loop back to the start if at the last role
+            const nextIndex = (currentIndex + 1) % roles.length;
+            setSelectedRole(roles[nextIndex].name);
+        }, 6000);
     
-    //     return () => clearInterval(interval); // Cleanup interval on component unmount
-    // }, [roles, currentIndex]);
+        return () => clearInterval(interval); // Cleanup interval on component unmount
+    }, [roles, currentIndex]);
 
     return (
         <div className="value-container">
@@ -94,7 +94,7 @@ const ValueComponent = () => {
             </div>
 
             {/* Conditionally Render the Correct Container */}
-            {selectedRole === "CIO" && (
+            {selectedRole === "Founder" && (
                 <div className="value-container">
                     <div className="content-container">
                         <div className="left-section">
@@ -128,26 +128,28 @@ const ValueComponent = () => {
                 </div>
             )}
 
-            {selectedRole === "CHRO" && (
+            {selectedRole === "Accounts" && (
                 <div className="value-container">
                     <div className="content-container">
-                        <div className="left-section">
+                      <div className="left-section">
                             <div className="info-box without-greyhr">
-                                <h3>Without greyHR</h3>
+                                <div className="box-header text-center">SalaryBooks waale</div>
                                 <ul>
-                                    <li>Data security concerns and system compatibility issues.</li>
-                                    <li>Low user adoption rates.</li>
-                                    <li>No guided implementation.</li>
-                                </ul>
+                                <li><strong>Instant Bank Payout Sheets</strong> – Automatically generate accurate, ready-to-upload payment files for faster salary disbursement.</li>
+                                <li><strong>Reports Built for Accountants</strong> – Structured, compliant, and audit-ready reports that save hours of manual formatting.</li>
+                                <li><strong>Complete Documentation</strong> – Every report comes with supporting records for easy verification and compliance checks.</li>
+                                <li><strong>Easy Subscription</strong> – Payments & billing automated for ease of accountants.</li>
+                               </ul>
                             </div>
 
                             <div className="info-box with-greyhr">
-                                <h3>With greyHR</h3>
-                                <p>
-                                    ✅ No compliance nightmares! greyHR’s own implementation team works
-                                    with your IT, ensuring seamless implementation and integration of HR
-                                    tech, with the assurance of data security and scalability.
-                                </p>
+                               <div className="box-header text-center">Excel Waale</div>
+                          <ul>
+                            <li>Bank payout files have to be created manually, increasing processing time and the chance of errors.</li>
+                            <li>Reports are often in inconsistent formats, requiring extra effort to make them audit-ready.</li>
+                            <li>Supporting documents must be collected separately, slowing down reconciliations.</li>
+                            <li>Payment and billing processes are fragmented, creating delays and confusion.</li>
+                            </ul>
                             </div>
                         </div>
 
@@ -161,23 +163,28 @@ const ValueComponent = () => {
             {selectedRole === "Payroll Admin" && (
                 <div className="value-container">
                     <div className="content-container">
-                        <div className="left-section">
+                       <div className="left-section">
                             <div className="info-box without-greyhr">
-                                <h3>Without greyHR</h3>
+                                <div className="box-header text-center">SalaryBooks waale</div>
                                 <ul>
-                                    <li>Data security concerns and system compatibility issues.</li>
-                                    <li>Low user adoption rates.</li>
-                                    <li>No guided implementation.</li>
+                                        <li><strong>Automation Does the Hard Work</strong> – The system handles complex payroll processing so the team can focus on review and approval.</li>
+                                        <li><strong>Effortless Attendance Tracking</strong> – Automatic integration with biometric systems ensures precise, real-time attendance data.</li>
+                                        <li><strong>No More Spreadsheet Chaos</strong> – Eliminate dependency on Excel and centralize all payroll operations in one reliable platform.</li>
+                                        <li><strong>Error-Free Calculations</strong> – Built-in checks drastically cut manual mistakes, protecting accuracy and compliance.</li>
+                                        <li><strong>No More Repetitive Work</strong> – Routine tasks are automated, freeing up time for higher-value activities.</li>
                                 </ul>
+
                             </div>
 
                             <div className="info-box with-greyhr">
-                                <h3>With greyHR</h3>
-                                <p>
-                                    ✅ No compliance nightmares! greyHR’s own implementation team works
-                                    with your IT, ensuring seamless implementation and integration of HR
-                                    tech, with the assurance of data security and scalability.
-                                </p>
+                               <div className="box-header text-center">Excel Waale</div>
+                           <ul>
+                            <li>Payroll staff spend hours on repetitive, manual calculations.</li>
+                            <li>Attendance data is pieced together from multiple sources, often late or incomplete.</li>
+                            <li>Excel sheets grow complex, error-prone, and hard to track.</li>
+                            <li>Small mistakes snowball into payment delays or compliance risks.</li>
+                            <li>The same tasks are repeated month after month, wasting valuable time.</li>
+                            </ul>
                             </div>
                         </div>
 
@@ -191,23 +198,28 @@ const ValueComponent = () => {
             {selectedRole === "Managers" && (
                 <div className="value-container">
                     <div className="content-container">
-                        <div className="left-section">
+                         <div className="left-section">
                             <div className="info-box without-greyhr">
-                                <h3>Without greyHR</h3>
-                                <ul>
-                                    <li>Data security concerns and system compatibility issues.</li>
-                                    <li>Low user adoption rates.</li>
-                                    <li>No guided implementation.</li>
-                                </ul>
+                                <div className="box-header text-center">SalaryBooks waale</div>
+                         <ul>
+                        <li><strong>Effortless Policy Rollout</strong> – Implement payroll and HR policies from the top down, ensuring consistent compliance across every team.</li>
+                        <li><strong>Detailed Cost Center Segregation</strong></li>
+                        <li><strong>Accuracy You Can Trust</strong> – Automated calculations and validations reduce human error and strengthen financial reliability.</li>
+                        <li><strong>Tailored Reporting</strong> – Generate the exact reports management needs for strategic planning. Customizable reports deliver exactly the insights management needs—no extra work required.</li>
+                        <li><strong>Managed Exceptions</strong> – Deviations are flagged, controlled, and approved before they create problems, keeping processes efficient and risk-free.</li>
+                        </ul>
+
                             </div>
 
                             <div className="info-box with-greyhr">
-                                <h3>With greyHR</h3>
-                                <p>
-                                    ✅ No compliance nightmares! greyHR’s own implementation team works
-                                    with your IT, ensuring seamless implementation and integration of HR
-                                    tech, with the assurance of data security and scalability.
-                                </p>
+                               <div className="box-header text-center">Excel Waale</div>
+                              <ul>
+                                <li>Policy updates get lost in translation, causing inconsistent payroll practices across teams.</li>
+                                <li>Payroll costs blur together, making it hard to see which departments are in terms of compliance and costs.</li>
+                                <li>Manual checks still leave room for costly miscalculations.</li>
+                                <li>Reports are generic, forcing managers to manipulate data before it’s useful.</li>
+                                <li>Deviations slip through unnoticed until they cause financial or compliance headaches.</li>
+                                </ul>
                             </div>
                         </div>
 
@@ -223,23 +235,30 @@ const ValueComponent = () => {
             {selectedRole === "Employees" && (
                 <div className="value-container">
                     <div className="content-container">
-                        <div className="left-section">
+                       <div className="left-section">
                             <div className="info-box without-greyhr">
-                                <h3>Without greyHR</h3>
-                                <ul>
-                                    <li>Data security concerns and system compatibility issues.</li>
-                                    <li>Low user adoption rates.</li>
-                                    <li>No guided implementation.</li>
-                                </ul>
+                                <div className="box-header text-center">SalaryBooks waale</div>
+                              <ul>
+                                <li><strong>Instant Payslip Access</strong> – Employees can download their payslips anytime without HR follow-ups.</li>
+                                <li><strong>Real-Time Attendance View</strong> – See attendance records instantly, reducing disputes and confusion.</li>
+                                <li><strong>Quick Leave Applications</strong> – Apply and track leave requests online with instant status updates.</li>
+                                <li><strong>Hassle-Free Reimbursement Requests</strong> – Submit claims digitally and track approval progress.</li>
+                                <li><strong>Easy Salary Advance Requests</strong> – Apply for advances in just a few clicks, with clear repayment terms.</li>
+                                <li><strong>Full Payroll Transparency</strong> – Clear, transparent payroll data builds trust and reduces employee queries.</li>
+                               </ul>
+
                             </div>
 
                             <div className="info-box with-greyhr">
-                                <h3>With greyHR</h3>
-                                <p>
-                                    ✅ No compliance nightmares! greyHR’s own implementation team works
-                                    with your IT, ensuring seamless implementation and integration of HR
-                                    tech, with the assurance of data security and scalability.
-                                </p>
+                               <div className="box-header text-center">Excel Waale</div>
+                              <ul>
+                                <li>Payslips take days to receive, leading to repeated HR follow-ups.</li>
+                                <li>Attendance records are unclear, causing disputes and mistrust.</li>
+                                <li>Leave applications require manual forms or long email chains.</li>
+                                <li>Reimbursement requests get delayed or lost in paperwork.</li>
+                                <li>Salary advance requests involve multiple approvals and long wait times.</li>
+                                <li>Lack of transparency fuels frustration and increases HR workload.</li>
+                                </ul>
                             </div>
                         </div>
 
