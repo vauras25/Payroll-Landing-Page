@@ -189,17 +189,17 @@ const positionNames = [
       </p>
 
       <div className="button-group">
-        <button className="primary-btn">
+        <button className="primary-btn1">
           <a
             href="https://www.vauras.in/"
             className="link1"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Get Fully managed Services
+            View Pricing
           </a>
         </button>
-        <button className="secondary-btn">
+        <button className="secondary-btn1">
           <a
             href="https://www.vauras.in/"
             className="link2"

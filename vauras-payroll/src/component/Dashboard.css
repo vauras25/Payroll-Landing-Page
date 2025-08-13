@@ -29,27 +29,41 @@
   margin-bottom: 40px;
 }
 
-.primary-btn,
-.secondary-btn {
-  padding: 10px 20px;
+.primary-btn1,
+.secondary-btn1 {
+  padding: 13px 20px;
   font-size: 1rem;
   margin: 0 10px;
   border: none;
   cursor: pointer;
   border-radius: 6px;
+  width: 11%;
+  font-family: 'Poppins', sans-serif;
 }
 
-.primary-btn {
+.primary-btn1 {
   background-color: #007bff;
   color: white;
-  width: 14%;
+  
 }
-
-.secondary-btn {
+.primary-btn1:hover {
+  background-color: #001380;
+  transition: background-color 0.3s ease;
+  padding: 15px 15px;
+  /* font-size: 16px; */
+  
+  /* font-size: 16px; */
+  /* width: 14%; */
+}
+.secondary-btn1 {
   background-color: #f0f0f0;
   color: #000000;
 }
-
+.secondary-btn1:hover {
+  background-color: rgb(167, 209, 226);
+  transition: background-color 0.3s ease;
+  /* font-size: 20px; */
+}
 .carousel {
   display: flex;
   align-items: center;
