@@ -118,7 +118,7 @@ const MetricsSection = () => {
   return (
     <div className="metrics-container" ref={metricsRef}>
       <p className="metrics-header">
-         MORE THAN A PAYROLL SOFTWARE
+         MORE THAN A PAYROLL SOFTWARE to use
       </p>
       <p className="subtext_metrics">
         Your trusted partner in compliance and employee satisfaction.

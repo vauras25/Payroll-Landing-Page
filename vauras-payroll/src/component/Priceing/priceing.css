@@ -89,13 +89,13 @@
   }
   .pricing-card.regular2 {
     
-    border: 2px solid #8ecafd; /* Green border */
+    border: 2px solid #8ecafd; 
     width: 16%;
     background-color: #53ade1;
   }
   .pricing-card.regular2:hover {
     
-    border: 2px solid #070304; /* Green border */
+    border: 2px solid #070304; 
     width: 16%;
     background-color: #53ade1;
     z-index: 2;
@@ -229,7 +229,6 @@
   background-color: #ffffff;
 }
 
-/* Card styles */
 .pricing-card {
   border: 1px solid #ccc;
   border-radius: 12px;
@@ -243,13 +242,13 @@
   transition: 0.3s;
 }
 
-/* Recommended card */
+
 .recommended {
   background: #e6f4e6;
   border: 2px solid #53ade1;
 }
 
-/* Badge for recommended */
+
 .badge {
   background-color: #53ade1;
   color: white;
@@ -261,7 +260,7 @@
   left: 20px;
 }
 
-/* Card header */
+
 .pricing-card-header {
   font-weight: bold;
   font-size: 20px;
@@ -272,16 +271,13 @@
 }
 
 
-/* Regular card */
 
-
-/* Premium card */
 
 
 .regular:hover{
-  /* width: 18%; */
+ 
 }
-/* Pricing */
+
 .pricing-price {
   font-size: 28px;
   font-weight: bold;
@@ -294,7 +290,7 @@
   color: black;
 }
 
-/* Sub text under price */
+
 .pricing-sub-text {
   text-align: center;
   font-size: 14px;
@@ -302,7 +298,7 @@
   margin-bottom: 10px;
 }
 
-/* Features list */
+
 .features-list {
   list-style: none;
   text-align: left;
@@ -315,7 +311,7 @@
   margin: 6px 0;
 }
 
-/* Sections list */
+
 .sections-list {
   list-style: none;
   text-align: left;
@@ -328,7 +324,6 @@
   margin: 6px 0;
 }
 
-/* Call-to-action button */
 .cta-button {
   margin-top: auto;
   padding: 12px 20px;
