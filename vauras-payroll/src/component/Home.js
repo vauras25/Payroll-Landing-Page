@@ -8,7 +8,7 @@ import TimeTrackingSection from "./TimeTrackingSection";
 import WallofLove from "./WallOfLove/WallOfLove"
 import ValueComponent from "./ValueComponent/ValueComponent";
 // import CommunitySection from "./CommunitySection/CommunitySection"
-import Practical_Features from "./Practical_Features/Practical_Features"
+import PracticalFeatures from "./PracticalFeatures/PracticalFeatures"
 // import Reports from "./Reports/Reports"
 import Contact from "./Contact/Contact";
 function Home() {
@@ -18,7 +18,7 @@ function Home() {
         <Dashboard/>
        <MetricsSection/>
        <WallofLove/>
-       <Practical_Features/>
+       <PracticalFeatures/>
        <TimeTrackingSection/>
        <ValueComponent/>
        {/* <Reports/> */}
