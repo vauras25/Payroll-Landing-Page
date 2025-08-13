@@ -9,8 +9,8 @@ export default function FeaturesPage() {
       <h2>REPORTS</h2>
     </div>
     <div className="reports_img">
-        <img src={left_img}/>
-        <img className="right_img"  src={right_img}/>
+        <img src={left_img}  alt="Left report preview"/>
+        <img className="right_img"  src={right_img}  alt="Right report preview" />
     </div>
     </>
   );
