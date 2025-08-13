@@ -24,42 +24,42 @@ const Navigator = () => {
       {/* Navigation Links */}
       <ul className={`nav-list ${menuOpen ? 'open' : ''}`}>
         <li className="nav-item">
-          <NavLink to="/" className="nav-link1" end>
+          <NavLink to="/" className="nav-link" end>
             Home
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/about" className="nav-link1">
+          <NavLink to="/about" className="nav-link">
             About
           </NavLink>
         </li>
         {/* <li className="nav-item">
-          <NavLink to="/Services" className="nav-link1">
+          <NavLink to="/Services" className="nav-link">
             Services
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/Career" className="nav-link1">
+          <NavLink to="/Career" className="nav-link">
             Career
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/support" className="nav-link1">
+          <NavLink to="/support" className="nav-link">
             Support
           </NavLink>
         </li> */}
         <li className="nav-item">
-          <NavLink to="/Contact" className="nav-link1">
+          <NavLink to="/Contact" className="nav-link">
             Contact
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/Pricing" className="nav-link1">
+          <NavLink to="/Pricing" className="nav-link">
           Pricing
           </NavLink>
         </li>
         <li className="nav-item">
-        <NavLink to="https://vauras.cloud/login"  className="nav-link login-btn">
+        <NavLink to="/login" className="nav-link">
           Login
           </NavLink>
           {/* <a href="https://vauras.cloud/login" className="nav-link" target="_blank" rel="noopener noreferrer">
