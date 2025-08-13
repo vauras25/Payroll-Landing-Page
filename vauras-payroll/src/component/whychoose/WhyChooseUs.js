@@ -2,16 +2,22 @@ import React from "react";
 import "./WhyChooseUs.css";
 import img1 from "../../image/img1.png"; // Replace with actual image paths
 import img2 from "../../image/img2.png";
-// import img3 from "../../image/img3.png";
+import img3 from "../../image/img3.png";
+import img4 from "../../image/img4.png";
+import img5 from "../../image/img5.png";
 
 const WhyChooseUs = () => {
   return (
     <section className="why-choose-us">
-      <h2 className="title">Why Choose Us ?</h2>
-      <p className="subtitle">
+      {/* <div className="title"> */}
+      <h2 className="text-center">Why Choose Us ?</h2>
+      {/* </div> */}
+       {/* <div className="subtitle"> */}
+      <p className="text-center">
         Empowering your business with expert compliance and solutions for lasting
         satisfaction and growth.
       </p>
+      {/* </div> */}
 
       <div className="row">
         <div className="text-column">
@@ -32,7 +38,7 @@ const WhyChooseUs = () => {
           </div>
         </div>
         <div className="image-column">
-          <img src={img1} alt="Payroll illustration" />
+          <img src={img3} alt="Payroll illustration" />
         </div>
       </div>
 
@@ -58,7 +64,7 @@ const WhyChooseUs = () => {
           </div>
         </div>
          <div className="image-column2">
-          <img src={img2} alt="Compliance illustration" />
+          <img src={img4} alt="Compliance illustration" />
         </div>
       </div>
 
@@ -80,8 +86,8 @@ const WhyChooseUs = () => {
             </p>
           </div>
         </div>
-        <div className="image-column">
-          <img src={img1} alt="Payroll illustration" />
+        <div className="image-columnby">
+          <img src={img2} alt="Payroll illustration" />
         </div>
       </div>
 
@@ -106,7 +112,7 @@ const WhyChooseUs = () => {
           </div>
         </div>
          <div className="image-column2">
-          <img src={img2} alt="Compliance illustration" />
+          <img src={img5} alt="Compliance illustration" />
         </div>
       </div>
 
