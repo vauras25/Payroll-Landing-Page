@@ -9,7 +9,7 @@ import WallofLove from "./WallOfLove/WallOfLove"
 import ValueComponent from "./ValueComponent/ValueComponent";
 // import CommunitySection from "./CommunitySection/CommunitySection"
 import Practical_Features from "./Practical_Features/Practical_Features"
-import Reports from "./Reports/Reports"
+// import Reports from "./Reports/Reports"
 import Contact from "./Contact/Contact";
 function Home() {
     return(
@@ -21,7 +21,7 @@ function Home() {
        <Practical_Features/>
        <TimeTrackingSection/>
        <ValueComponent/>
-       <Reports/>
+       {/* <Reports/> */}
        {/* <Features/> */}
        {/* <CommunitySection/>
        <ComplianceSection/>
