@@ -108,13 +108,16 @@ const Contact = () => {
                 <textarea name="question" rows="4" value={formData.question} onChange={handleChange}></textarea>
               </div>
 
-              <button type="button" onClick={handleSubmit}>Submit</button>
+               <div>
+                 <button type="button" onClick={handleSubmit}><span>Submit</span></button>
+               </div>
             </form>
           </div>
 
           {/* Right side: Contact Info */}
           <div className="contact-info">
-            <h3>Reach us:</h3>
+            {/* <h3>Reach us:</h3> */}
+            <p>Reach us:</p>
             <p> <FaMapMarkerAlt /> 162/A/57 Lake Gardens, Kolkata - 700045</p>
             <p><FaPhoneAlt /> +91  7605060599</p>
             <p><FaPhoneAlt /> +91 98317766186</p>

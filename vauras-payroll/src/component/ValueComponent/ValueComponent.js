@@ -98,7 +98,7 @@ const ValueComponent = () => {
                 <div className="value-container">
                     <div className="content-container">
                         <div className="left-section">
-                            <div className="info-box without-greyhr">
+                            <div className="info-box blue-box">
                                 <div className="box-header text-center">SalaryBooks waale</div>
                              <ul>
                                 <li><strong>Total Payroll Clarity</strong> – Everyone sees exactly what they need, fostering trust and alignment.</li>
@@ -109,7 +109,7 @@ const ValueComponent = () => {
                              </ul>
                             </div>
 
-                            <div className="info-box with-greyhr">
+                            <div className="info-box blue-box">
                                <div className="box-header text-center">Excel Waale</div>
                                 <ul>
                                     <li>Payroll feels like a monthly fire drill, pulling you away from running the business.</li>
@@ -132,7 +132,7 @@ const ValueComponent = () => {
                 <div className="value-container">
                     <div className="content-container">
                       <div className="left-section">
-                            <div className="info-box without-greyhr">
+                            <div className="info-box blue-box">
                                 <div className="box-header text-center">SalaryBooks waale</div>
                                 <ul>
                                 <li><strong>Instant Bank Payout Sheets</strong> – Automatically generate accurate, ready-to-upload payment files for faster salary disbursement.</li>
@@ -142,7 +142,7 @@ const ValueComponent = () => {
                                </ul>
                             </div>
 
-                            <div className="info-box with-greyhr">
+                            <div className="info-box blue-box">
                                <div className="box-header text-center">Excel Waale</div>
                           <ul>
                             <li>Bank payout files have to be created manually, increasing processing time and the chance of errors.</li>
@@ -164,7 +164,7 @@ const ValueComponent = () => {
                 <div className="value-container">
                     <div className="content-container">
                        <div className="left-section">
-                            <div className="info-box without-greyhr">
+                            <div className="info-box blue-box">
                                 <div className="box-header text-center">SalaryBooks waale</div>
                                 <ul>
                                         <li><strong>Automation Does the Hard Work</strong> – The system handles complex payroll processing so the team can focus on review and approval.</li>
@@ -176,7 +176,7 @@ const ValueComponent = () => {
 
                             </div>
 
-                            <div className="info-box with-greyhr">
+                            <div className="info-box blue-box">
                                <div className="box-header text-center">Excel Waale</div>
                            <ul>
                             <li>Payroll staff spend hours on repetitive, manual calculations.</li>
@@ -199,7 +199,7 @@ const ValueComponent = () => {
                 <div className="value-container">
                     <div className="content-container">
                          <div className="left-section">
-                            <div className="info-box without-greyhr">
+                            <div className="info-box blue-box">
                                 <div className="box-header text-center">SalaryBooks waale</div>
                          <ul>
                         <li><strong>Effortless Policy Rollout</strong> – Implement payroll and HR policies from the top down, ensuring consistent compliance across every team.</li>
@@ -211,7 +211,7 @@ const ValueComponent = () => {
 
                             </div>
 
-                            <div className="info-box with-greyhr">
+                            <div className="info-box blue-box">
                                <div className="box-header text-center">Excel Waale</div>
                               <ul>
                                 <li>Policy updates get lost in translation, causing inconsistent payroll practices across teams.</li>
@@ -236,7 +236,7 @@ const ValueComponent = () => {
                 <div className="value-container">
                     <div className="content-container">
                        <div className="left-section">
-                            <div className="info-box without-greyhr">
+                            <div className="info-box blue-box">
                                 <div className="box-header text-center">SalaryBooks waale</div>
                               <ul>
                                 <li><strong>Instant Payslip Access</strong> – Employees can download their payslips anytime without HR follow-ups.</li>
@@ -249,7 +249,7 @@ const ValueComponent = () => {
 
                             </div>
 
-                            <div className="info-box with-greyhr">
+                            <div className="info-box blue-box">
                                <div className="box-header text-center">Excel Waale</div>
                               <ul>
                                 <li>Payslips take days to receive, leading to repeated HR follow-ups.</li>

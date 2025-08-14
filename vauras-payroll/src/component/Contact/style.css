@@ -47,7 +47,7 @@
 
 .form label {
   width: 200px;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 14px;
   letter-spacing: 1px;
 }
@@ -79,6 +79,7 @@
   background-color: #007bff;
   color: white;
   border: none;
+  width: 31%;
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
@@ -139,4 +140,46 @@
     margin-left: 0;
     width: 100%;
   }
+}
+
+@media (max-width:480px){
+  .form button {
+      margin-left: 0;
+      width: 31%;
+  }
+  .contact-info {
+    flex: 1 1;
+    min-width: 300px;
+    background: white;
+    padding: 10px;
+ }
+ form input, .form textarea {
+    flex: 1 1;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.contact-form {
+    flex: 1 1;
+    min-width: 59%;
+    background: white;
+    padding: 9px;
+}
+.contact-inner {
+        flex-direction: column;
+        width: 100%;
+    }
+    .contact-content {
+    padding: 28px 9px;
+    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+.contact-container {
+  font-family: Arial, sans-serif;
+  padding: 0.5rem;
+  /* background: url("/your-background.jpg") no-repeat center center/cover; */
+  color: #333;
+}
 }

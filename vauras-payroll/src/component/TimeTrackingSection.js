@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./TimeTrackingSection.css";
-import { FaClipboardList, FaUsers } from "react-icons/fa"; 
+// import { FaClipboardList, FaUsers } from "react-icons/fa"; 
 import employee from "../image/employee.jpg"; 
 import attendence from "../image/attendence.jpg"; 
 import salary from "../image/salary.jpg"; 
@@ -12,6 +12,8 @@ import incentiveIcon from "../image/apply_incentive_icon.png";
 import employeeIcon from "../image/employees_icon.png";
 import salaryCalIcon from "../image/SALARY_CALCULATOR_ICON.png";
 import salaryRepIcon from "../image/salary_report_icon.png";
+import advanceIcon from "../image/advance_icon.png";
+import attendanceIcon from "../image/attendance_management.png";
 // import incentive1 from "../image/incentive1.jpg"; 
 // import incentive2 from "../image/incentive2.jpg"; 
 import salaryBook from "../image/sbhome.png";
@@ -44,7 +46,8 @@ const TimeTrackingSection = () => {
   return (
     <div className="body1">
       <div className="heading">
-      <h2 >Seamless <span className="heading-part">payroll solutions</span> for global teams.</h2>
+      {/* <h2 >Seamless <span className="heading-part">payroll solutions</span> for global teams.</h2> */}
+      <h2 >Access Payroll Anywhere, Anytime - 24/7</h2>
       <p className="heading-part2">Manage the payroll process with time tracking, timesheets, leave management, reporting, and more.</p>
     </div>
     <div className="time-scope">
@@ -79,7 +82,7 @@ const TimeTrackingSection = () => {
               onClick={() => setSelectedMenu("Attendance management")} 
               className={selectedMenu === "Attendance management" ? "active" : ""}
             >
-              <FaUsers className="menu-icon" /> Attendance (Upload/Edit)
+               <img src={attendanceIcon} alt="Attendance Icon" className="menu-icon" /> Attendance (Upload/Edit)
             </li>
              <li 
               onClick={() => setSelectedMenu("Biometric Sync")} 
@@ -115,7 +118,7 @@ const TimeTrackingSection = () => {
               onClick={() => setSelectedMenu("Advance")} 
               className={selectedMenu === "Advance" ? "active" : ""}
             >
-              <FaClipboardList className="menu-icon" /> Advance (Apply/Manage)
+              <img src={advanceIcon} alt="Biometric Icon" className="menu-icon" /> Advance (Apply/Manage)
             </li>
             {/* <li 
               onClick={() => setSelectedMenu("Salary Revision")} 
