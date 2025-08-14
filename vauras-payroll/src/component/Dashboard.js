@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo } from "react";
 import "../App.css";
 import "./Dashboard.css";
+import { Link } from "react-router-dom";
 // import sampleImage from "../image/logo11.jpg";
 // import sampleImage1 from "../image/logo12.jpg";
 // import sampleImage2 from "../image/logo13.jpg";
@@ -196,24 +197,30 @@ const positionNames = [
 
       <div className="button-group">
         <button className="primary-btn1">
-          <a
-            href="https://www.vauras.in/"
+          {/* <a
+            href="/contact"
             className="link1"
             target="_blank"
             rel="noopener noreferrer"
           >
             View Pricing
-          </a>
+          </a> */}
+           <Link to="/contact" className="link1">
+    View Pricing
+  </Link>
         </button>
         <button className="secondary-btn1">
-          <a
-            href="https://www.vauras.in/"
+          {/* <a
+            href="/contact"
             className="link2"
             target="_blank"
             rel="noopener noreferrer"
           >
             Request Demo
-          </a>
+          </a> */}
+            <Link to="/contact" className="link2">
+    Request Demo
+  </Link>
         </button>
       </div>
 
