@@ -197,7 +197,7 @@ const positionNames = [
       <div className="button-group">
         <button className="primary-btn1">
           <a
-            href="https://www.vauras.in/"
+            href="/contact"
             className="link1"
             target="_blank"
             rel="noopener noreferrer"
@@ -207,7 +207,7 @@ const positionNames = [
         </button>
         <button className="secondary-btn1">
           <a
-            href="https://www.vauras.in/"
+            href="/contact"
             className="link2"
             target="_blank"
             rel="noopener noreferrer"

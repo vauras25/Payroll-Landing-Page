@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Navigator from '../src/App navigator/Navigator'; 
 import './App.css';
 import AppRoutes from './Routes'; 
+import Footer from './component/footer/footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
 
         
         <AppRoutes />
+         <Footer/>
       </div>
     </Router>
   );
