@@ -65,7 +65,7 @@ const ValueComponent = () => {
             // Move to the next role, loop back to the start if at the last role
             const nextIndex = (currentIndex + 1) % roles.length;
             setSelectedRole(roles[nextIndex].name);
-        }, 6000);
+        }, 60000);
     
         return () => clearInterval(interval); // Cleanup interval on component unmount
     }, [roles, currentIndex]);

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './AppNavigator.css';
 import { FaBars } from 'react-icons/fa';
-import logo from '../image/logo.png'; // Adjust path if needed
+import logo from '../image/sbhome.png'; // Adjust path if needed
  
 const Navigator = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,7 +17,7 @@ const Navigator = () => {
       {/* Logo */}
       <div className="nav-logo-container">
         <NavLink to="/" end>
-          <img src={logo} alt="Logo" className="nav-logo" />
+          <img src={logo} alt="Logo" className="nav-logo"/>
         </NavLink>
       </div>
 
