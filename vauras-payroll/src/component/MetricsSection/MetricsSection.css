@@ -19,7 +19,7 @@
   .metrics-sectioin-grid {
     display: flex;
     justify-content: center;
-    gap: 121px;
+    gap: 6%;
     margin-bottom: 30px;
   }
   .metric-section-item {
@@ -27,7 +27,7 @@
   }
 
   .metric-section-item h2 {
-    font-size: 38px;
+    font-size: 37px;
     font-weight: bold;
     margin: 0;
   }
@@ -84,9 +84,22 @@
       transform: translateX(-50%);
     }
   }
-  
+    @media (max-width: 992px){
+      .metric-section-item h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+      }
+    }
+  @media (max-width: 870px){
+        .metric-section-item h2 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+}
+  }
   /* Responsive Adjustments */
-  @media (max-width: 768px) {
+  @media (max-width: 790px) {
     .logo-container {
       gap: 15px;
     }
