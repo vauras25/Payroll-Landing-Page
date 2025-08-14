@@ -9,6 +9,8 @@ import securityIcon from "./aboutimage/abouticon4.png";
 import reason from "./aboutimage/aboutimg3.png";
 import family from "./aboutimage/aboutimg4.png";
 import vaurasLogo from "./aboutimage/aboutimage5.png";
+import logo from "../../image/partnership.png"
+import { Link } from "react-router-dom";
 
 
 const AboutSection = () => {
@@ -240,6 +242,60 @@ const AboutSection = () => {
         within SalaryBooks is handled with precision and timeliness.
       </p>
     </section>
+
+    <div className="perfect-partnership">
+      <h2>
+        The <span className="highlight">Perfect Partnership</span>
+      </h2>
+      <p className="intro">
+        By <span className="italic">combining</span> SalaryBooks cutting-edge payroll technology with
+        VAURAS’s deep compliance expertise, we offer a complete solution that delivers:
+      </p>
+
+      <ul className="benefits">
+        <li>Accuracy in every payroll run</li>
+        <li>Confidence in compliance calculations &amp; Indian norms</li>
+        <li>Clarity through transparent reporting</li>
+      </ul>
+
+      <p className="tagline">
+        <strong>
+          SalaryBooks + Vauras Advisory — Your all-in-one solution for payroll, compliance, and HR excellence.
+        </strong>
+      </p>
+
+        <img className="logo_about" src={logo} />
+      {/* <div className="equation">
+        <img src="/salarybooks.png" alt="SalaryBooks" />
+        <span>+</span>
+        <img src="/handshake.png" alt="Partnership" />
+        <span>+</span>
+        <img src="/vauras.png" alt="Vauras" />
+        <span>=</span>
+        <img src="/growth.png" alt="Growth" />
+      </div> */}
+
+
+    </div>
+    <p className="footer-text">
+        <li>If your requirements are not met here then you can try <strong>Third Party Payroll</strong> or <strong>customizable</strong> </li>
+       <li> services from <strong>VAURAS</strong>.</li>
+      </p>
+
+      <div className="buttons">
+        <button className="btn1">
+         
+<Link to="https://www.vauras.in/" className="link1">
+VISIT US
+  </Link>
+        </button>
+        <button className="btn2">
+          
+          <Link to="/contact" className="link1">
+          CONTACT US
+  </Link>
+          </button>
+      </div>
     </>
   );
 };

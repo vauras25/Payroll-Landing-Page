@@ -674,4 +674,178 @@
   }
 }
 
+.perfect-partnership {
+  border: 2px solid #2c64c6;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: #f1f9ff;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  font-family: 'Outfit', sans-serif;
+}
+
+.perfect-partnership h2 {
+  font-size: 33px;
+  font-weight: 700;
+}
+
+.perfect-partnership .highlight {
+  color: #0066cc;
+}
+
+.perfect-partnership .intro {
+  font-size: 16px;
+  margin: 31px 0;
+}
+
+.perfect-partnership .italic {
+  font-style: italic;
+}
+
+.benefits {
+  list-style: none;
+  padding: 0;
+  margin: 46px 0;
+}
+
+.benefits li {
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.tagline {
+  font-weight: bold;
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+}
+
+.logo_about{
+  width: 70%;
+}
+.equation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.equation img {
+  height: 70px;
+  width: 70px;
+  object-fit: contain;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 6px;
+  background: white;
+}
+
+.footer-text {
+  list-style: none;
+  margin-top: 20px;
+  font-size: 18px;
+  margin-left: -6px;
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  gap: 40px; /* Space between buttons */
+      margin-top: 31px;
+    margin-bottom: 42px;
+}
+
+.btn1 {
+  background-color: #4d7bbd; /* Blue color */
+  color: white;
+  border: none;
+  padding: 21px 66px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.btn2 {
+  background-color: #4d7bbd; /* Blue color */
+  color: white;
+  border: none;
+  padding: 21px 51px;font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.btn1:hover ,.btn2:hover {
+  background-color: #3a66a2; /* Slightly darker on hover */
+}
+
+
+
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .perfect-partnership h2 {
+    font-size: 1.8rem;
+  }
+  .perfect-partnership .intro {
+    font-size: 1rem;
+  }
+  .benefits li {
+    font-size: 0.95rem;
+  }
+  .logo_about {
+    max-width: 90%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .perfect-partnership {
+    padding: 20px;
+  }
+  .perfect-partnership h2 {
+    font-size: 1.6rem;
+  }
+  .perfect-partnership .intro {
+    font-size: 0.95rem;
+  }
+  .tagline {
+    font-size: 1rem;
+  }
+  .equation img {
+    height: 60px;
+    width: 60px;
+  }
+  .btn1, .btn2 {
+            width: 34%;
+        padding: 20px;
+        font-size: 0.95rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 400px) {
+  .perfect-partnership h2 {
+    font-size: 1.4rem;
+  }
+  .perfect-partnership .intro {
+    font-size: 0.9rem;
+  }
+  .benefits li {
+    font-size: 0.9rem;
+  }
+  .tagline {
+    font-size: 0.95rem;
+  }
+  .equation img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
 
