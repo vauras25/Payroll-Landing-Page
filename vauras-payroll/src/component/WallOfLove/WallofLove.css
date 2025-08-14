@@ -188,11 +188,22 @@
   
     .testimonial-item {
       width: 90%;
-      text-align: left;
+      text-align: center;
+    }
+    .testimonial-item p{
+     font-size: 14px;
+      text-align: center;
     }
   
     .testimonial-nav-icon {
       display: none;
     }
+
+   .wall-left h2 {
+    font-size: 20px;
+  }
+   .wall-left p {
+    font-size: 16px;
+  }
   }
   
