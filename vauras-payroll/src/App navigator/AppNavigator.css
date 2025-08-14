@@ -18,15 +18,18 @@
 
 /* Logo Styling */
 .nav-logo {
-  width: 220px; /* smaller size */
-  height: auto; /* keeps proportions */
-   height: 50px;
+     width: 167px;
+    height: auto;
+    height: 33px;
+    margin-top: 10px;
 }
 
 @media (max-width: 480px) {
   .nav-logo {
-    width: 140px; /* even smaller on mobile */
-    height: auto;
+    /* width: 140px;
+    height: auto; */
+       max-width: 100px; /* Smaller logo */
+    margin-top: 4px; 
   }
 }
 .nav-logo-container {
@@ -137,7 +140,9 @@
 /* Small Mobile Screens */
 @media (max-width: 480px) {
   .nav-logo {
-    height: 40px;
+           max-width: 159px;
+        margin-top: 4px;
+        margin-left: 6px; 
   }
 
   .menu-icon {

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './priceing.css';
 import logo1 from './image/sbhome.png';
 import logo2 from '../../image/mobile-illustration.png';
-import Footer from '../footer/footer';
+// import Footer from '../footer/footer';
 const plans = [
   {
     name: 'Salary Books',
