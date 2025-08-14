@@ -7,6 +7,11 @@ import logo from '../image/logo.png'; // Adjust path if needed
 const Navigator = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+   const handleLinkClick = () => {
+    setMenuOpen(false);
+  };
+
+
   return (
     <nav className="navbar">
       {/* Logo */}
@@ -24,12 +29,15 @@ const Navigator = () => {
       {/* Navigation Links */}
       <ul className={`nav-list ${menuOpen ? 'open' : ''}`}>
         <li className="nav-item">
-          <NavLink to="/" className="nav-link1" end>
+          {/* <NavLink to="/" className="nav-link1" end >
+            Home
+          </NavLink> */}
+           <NavLink to="/" className="nav-link1" end onClick={handleLinkClick}>
             Home
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/about" className="nav-link1">
+          <NavLink to="/about" className="nav-link1" onClick={handleLinkClick}>
             About
           </NavLink>
         </li>
@@ -49,12 +57,12 @@ const Navigator = () => {
           </NavLink>
         </li> */}
         <li className="nav-item">
-          <NavLink to="/Contact" className="nav-link1">
+          <NavLink to="/Contact" className="nav-link1" onClick={handleLinkClick}>
             Contact
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/Pricing" className="nav-link1">
+          <NavLink to="/Pricing" className="nav-link1" onClick={handleLinkClick}>
           Pricing
           </NavLink>
         </li>

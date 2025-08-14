@@ -89,6 +89,7 @@
   transition: transform 0.6s ease, opacity 0.6s ease;
   border-radius: 10px;
   overflow: hidden;
+  height: 80%;
 }
 
 .image-container.leftmost,
@@ -206,4 +207,74 @@
 .card-slide-out-right {
   animation: slideScaleOutRight 0.8s ease forwards;
   z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .button-group {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .button-group button {
+    width: 50%;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .button-group {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .button-group button {
+    width: 20%;
+    text-align: center;
+  }
+}
+@media (max-width: 900px) {
+  .button-group {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .button-group button {
+    width: 20%;
+    text-align: center;
+  }
+}
+@media (max-width: 1000px) {
+  .button-group {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .button-group button {
+    width: 20%;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .button-group {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .button-group button {
+    width: 33%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .image-container.left,
+  .image-container.right {
+    display: none !important;
+  }
+
+  /* Ensure center image takes full width */
+  .image-container.center {
+    flex: 1;
+    max-width: 100%;
+    height: 80%;
+  }
 }

@@ -11,6 +11,7 @@ import ValueComponent from "./ValueComponent/ValueComponent";
 import PracticalFeatures from "./PracticalFeatures/PracticalFeatures"
 import Reports from "./Reports/Reports"
 import Contact from "./Contact/Contact";
+import WhyChooseUs from "./whychoose/WhyChooseUs";
 function Home() {
     return(
 
@@ -26,6 +27,7 @@ function Home() {
        {/* <CommunitySection/>
        <ComplianceSection/>
        <FooterSection/> */}
+       <WhyChooseUs/>
        <Contact/>
         </div>
     );
