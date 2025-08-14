@@ -264,7 +264,7 @@ const AboutSection = () => {
         </strong>
       </p>
 
-        <img className="logo_about" src={logo} />
+        <img className="logo_about" src={logo} alt="VAURAS Logo" />
       {/* <div className="equation">
         <img src="/salarybooks.png" alt="SalaryBooks" />
         <span>+</span>
