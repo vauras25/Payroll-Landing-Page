@@ -1,5 +1,117 @@
 
 /* General Layout */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap');
+
+.founder-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 7%;
+  padding: 20px;
+  font-family: 'Outfit', sans-serif;
+}
+.grey-heading {
+  text-align: left;
+  font-size: 13px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  font-weight: bold;
+  color: #383434;
+}
+.blue-heading {
+  text-align: left;
+  font-size: 13px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  font-weight: bold;
+  color: #0947C3;
+}
+.cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.card {
+  border-radius: 15px;
+  padding: 20px;
+  /* max-height: 193px; */
+  box-sizing: border-box;
+}
+.card ul {
+  list-style-type: disc;
+  list-style-position: outside; /* ✅ ensures bullet is outside text block */
+  padding-left: 20px;           /* ✅ creates space for the bullet */
+  margin: 0;
+  text-align: left;             /* ✅ forces text to align left */
+   /* overflow-wrap: break-word; */
+}
+
+.card ul li {
+  text-align: left;             /* ✅ ensures each item aligns left */
+  font-size: 13px;
+  margin-bottom: 2px;
+  letter-spacing: 0.3px;
+}
+
+.card ul li::marker {
+  font-size: 0.6em;             /* ✅ smaller bullet */
+}
+.grey-card {
+  background-color: #E3E3E3;
+  border: 1px solid #757575;
+}
+
+.blue-card {
+  background-color: #D7E7FF;
+  border: 1px solid #005885;
+}
+
+.image-container {
+  flex-shrink: 0;
+  width: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  margin-top:37px;
+  border-radius: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .founder-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: -1%;
+  }
+.cards-wrapper{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+  
+  .image-container {
+    width: 60%;
+    max-width: 100%;
+  }
+    .card{
+    width: 90%;
+  }
+  .image-container {
+  order: -1; /* Moves image-container to the top */
+}
+}
+
+/* new css above */
 .value-container {
   text-align: center;
   padding: 40px 20px;
@@ -95,6 +207,7 @@
 .role-card .role-image {
   position: relative;
   z-index: 1;
+   object-fit: cover;
 }
 
 .role-card:hover {
@@ -109,7 +222,12 @@
   z-index: 0;
   border: 2px solid transparent;
   transition: border-color 0.3s ease-in-out;
+
+  aspect-ratio: 1 / 1;      /* ✅ Makes it a perfect square */
+  width: 100%;              /* or fixed width like 300px */
+  max-width: 100px;         /* optional: limit max width */
 }
+
 
 /* Default inactive role */
 .role-card:not(.active) {

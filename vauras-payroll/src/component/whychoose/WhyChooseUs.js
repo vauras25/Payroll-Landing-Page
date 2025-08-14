@@ -119,22 +119,19 @@ const WhyChooseUs = () => {
       <div className="row">
         <div className="text-column">
           <div className="text-block">
-            <h3>Built for Indian Businesses</h3>
+            <h3>Scalable for Growth</h3>
             <p>
-              SalaryBooks is designed with Indian regulations and business
-              practices at its core—not as an afterthought.
+             Whether you have 5 employees or 500 across multiple locations, SalaryBooks grows with your business. Add branches, customize salary structures, and handle bulk updates with ease.
             </p>
           </div>
           <div className="text-block">
-            <h3>Backed and Built by Compliance and Payroll Experts</h3>
+            <h3>Trusted by Businesses Across India</h3>
             <p>
-              The platform combines deep industry knowledge with advanced
-              technology to ensure accurate calculations, seamless statutory
-              adherence, and reliable payroll processing every time.
+              Join a growing community of forward-thinking businesses that trust SalaryBooks to simplify their payroll and compliance. Our clients span industries like IT, manufacturing, healthcare, education, and more—united by a common goal: stress-free payroll.
             </p>
           </div>
         </div>
-        <div className="image-column">
+        <div className="image-columnpay">
           <img src={img1} alt="Payroll illustration" />
         </div>
       </div>

@@ -12,6 +12,7 @@ import PracticalFeatures from "./PracticalFeatures/PracticalFeatures"
 import Reports from "./Reports/Reports"
 import Contact from "./Contact/Contact";
 import WhyChooseUs from "./whychoose/WhyChooseUs";
+import Footer from "./footer/footer";
 function Home() {
     return(
 
@@ -29,6 +30,7 @@ function Home() {
        <FooterSection/> */}
        <WhyChooseUs/>
        <Contact/>
+       <Footer/>
         </div>
     );
   }
