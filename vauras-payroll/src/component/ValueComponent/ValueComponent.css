@@ -6,9 +6,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px;
+  gap: 40px;
   flex-wrap: wrap;
-  margin-top: 7%;
+  margin-top: 8%;
   padding: 20px;
   font-family: 'Outfit', sans-serif;
 }
@@ -82,10 +82,14 @@
 .image-container img {
   width: 100%;
   height: auto;
-  margin-top:37px;
+  margin-top:42px;
   border-radius: 15px;
 }
-
+.heading-part2 {
+    margin-top: 10px;
+    color: #555;
+    margin-left: 19px;
+}
 /* Responsive */
 @media (max-width: 768px) {
   .founder-container {
@@ -171,8 +175,9 @@
 .roles-container {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin-bottom: -47px;
+  gap: 35px;
+  margin-top: 50px;
+  margin-bottom: -66px;
   flex-wrap: wrap;
 }
 

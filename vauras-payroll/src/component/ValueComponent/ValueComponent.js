@@ -65,7 +65,7 @@ const ValueComponent = () => {
             // Move to the next role, loop back to the start if at the last role
             const nextIndex = (currentIndex + 1) % roles.length;
             setSelectedRole(roles[nextIndex].name);
-        }, 60000);
+        }, 6000);
     
         return () => clearInterval(interval); // Cleanup interval on component unmount
     }, [roles, currentIndex]);
@@ -76,7 +76,7 @@ const ValueComponent = () => {
             <h2>
                 Everyone gets value from day 1
             </h2>
-            <p className="subtitle">
+            <p className="heading-part2">
                 A platform loved by everyone in your company - by employers and employees
             </p>
 

@@ -8,6 +8,7 @@ import expertIcon from "./aboutimage/abouticon3.png";
 import securityIcon from "./aboutimage/abouticon4.png";
 import reason from "./aboutimage/aboutimg3.png";
 import family from "./aboutimage/aboutimg4.png";
+import vaurasLogo from "./aboutimage/aboutimage5.png";
 
 
 const AboutSection = () => {
@@ -193,6 +194,52 @@ const AboutSection = () => {
         ))}
       </div> 
       </section>
+
+      <section className="powered-section">
+      <h2 className="powered-title">
+        Powered by <span className="brand">VAURAS</span>
+      </h2>
+
+      <p className="powered-description">
+        Behind <strong>SalaryBooks</strong> seamless compliance features is the expertise of{" "}
+        <strong>
+          VAURAS, a trusted name in statutory compliance and HR solutions.
+        </strong>
+        <br />
+        The Company is an extension to the consulting group which is active in HR
+        Services for almost two decades. We collaborate with client organizations to
+        manage their entire employee life cycle effectively, by handling their complex,
+        yet critical functions of payroll and statutory labour compliance.
+      </p>
+
+      <div className="powered-content row">
+        <div className="powered-list column">
+          <h3>VAURAS specializes in:</h3>
+          <ul>
+            <li>Third Party Payroll</li>
+            <li>ESIC (Employees’ State Insurance Corporation)</li>
+            <li>PF (Provident Fund)</li>
+            <li>Ptax Solutions</li>
+            <li><strong>Statutory Compliance & Advisory</strong></li>
+            <li>Labour Laws</li>
+            <li>Payroll Management</li>
+            <li>Shop & Establishment</li>
+            <li>LWF (Labour Welfare Fund)</li>
+            <li>Gratuity</li>
+          </ul>
+        </div>
+
+        <div className="powered-logo column">
+          <img src={vaurasLogo} alt="VAURAS Logo" />
+        </div>
+      </div>
+
+      <p className="powered-footer">
+        With years of experience and a <strong>team of compliance experts</strong>,
+        VAURAS ensures every statutory filing, employee benefit, and legal requirement
+        within SalaryBooks is handled with precision and timeliness.
+      </p>
+    </section>
     </>
   );
 };
