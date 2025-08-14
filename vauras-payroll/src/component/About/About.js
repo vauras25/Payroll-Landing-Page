@@ -54,9 +54,9 @@ const AboutSection = () => {
           <div className="introduction-text">
             <h1>
               <span className="brand">SalaryBooks</span> – A payroll software{" "}
-              <span className="highlight">built for India</span>,<br />
+              <span className="brand">built for India</span>,<br />
               <span className="people">  by people who understand{" "}</span>
-              <span className="highlight">Indian</span> payroll.
+              <span className="brand">Indian</span> payroll.
             </h1>
           </div>
         </section>
