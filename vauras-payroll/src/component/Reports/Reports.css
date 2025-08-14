@@ -107,3 +107,16 @@
     margin-top: 45px;
     margin-bottom: 24px;
 }
+@media (max-width: 768px) {
+  .right_img {
+    display: none;
+  }
+  .reports_img {
+    display: flex;
+    justify-content: center;
+  }
+  .reports_img img {
+    max-width: 100%;
+    height: auto;
+  }
+}

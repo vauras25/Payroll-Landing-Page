@@ -6,10 +6,44 @@ import timeIcon from "./aboutimage/abouticon1.png"; // replace with your icon pa
 import accuracyIcon from "./aboutimage/abouticon2.png";
 import expertIcon from "./aboutimage/abouticon3.png";
 import securityIcon from "./aboutimage/abouticon4.png";
+import reason from "./aboutimage/aboutimg3.png";
+
 
 const AboutSection = () => {
+
+  const cards = [
+    {
+      title: "Manual Payroll Was Slow, Error-Prone, and Stressful",
+      text: "SalaryBooks automates salary calculations, tax deductions, and report generation—saving time and reducing costly errors.",
+    },
+    {
+      title: "India Needed a Future–Ready Payroll System",
+      text: "Businesses now need cloud access, automation, role-based controls, and remote capabilities. SalaryBooks is cloud-first, secure, scalable, and designed to India.",
+    },
+    {
+      title: "Employee Experience Was Being Ignored Before",
+      text: "Employees once waited for payslips and lacked attendance or leave info. SalaryBooks’ portal gives real-time access, boosting satisfaction.",
+    },
+    {
+      title: "The Tools in the Market Didn’t Fit Indian Needs",
+      text: "Global payroll tools are pricey and generic & local ones clunky or outdated. SalaryBooks is designed for Indian businesses—affordable, easy to use, and packed with compliance-ready features.",
+    },
+    {
+      title: "Compliance Was a Constant Headache",
+      text: "India’s labor laws are complex and frequently updated. SalaryBooks stays up to date with the latest statutory requirements so businesses don’t face penalties, notices, or legal issues.",
+    },
+    {
+      title: "We Lived the Problem Ourselves",
+      text: "India’s labor laws are complex and frequently updated. SalaryBooks stays up to date with the latest statutory requirements so businesses don’t face penalties, notices, or legal issues.",
+    },
+    {
+      title: "SMEs Deserved the Same Efficiency as Large Enterprises",
+      text: "Big companies have access to costly HR suites. But small businesses lacked the tools to match that efficiency. SalaryBooks levels the playing field.",
+    },
+  ];
+
   return (
-    
+    <>
     <section className="about-section">
 
        <section className="intro-section">
@@ -64,7 +98,7 @@ const AboutSection = () => {
         </div>
       </div>
 
-      <div className="why-us">
+      <div className="why-us-section">
         <h2>Why US?</h2>
         <div className="why-us-icons">
           <div className="why-item">
@@ -106,8 +140,44 @@ const AboutSection = () => {
             required
           </p>
         </div>
+         <div className="with">
+          <p>
+            With SalaryBooks, businesses of all sizes — from startups to large enterprises — gain a smarter, faster, and more transparent way to manage their employees.
+          </p>
+          </div>
       </div>
     </section>
+
+     <section className="why-built-section">
+      <h3 className="subtitle"><strong>The reason</strong></h3>
+      <h2 className="title">
+       <span> Why We Built SalaryBooks?</span>
+      </h2>
+      
+    <div class="why-text">
+      <p>
+        Managing payroll manually or through <strong>spreadsheets is time-consuming and error-prone.</strong>
+      </p>
+      <p>
+        Our team saw first-hand how small and medium-sized businesses struggle with compliance, monthly filings, and payslip generation. So, we built SalaryBooks to take that burden off your shoulders—giving you a reliable, compliant, and scalable solution.
+      </p>
+      <p><strong>Payroll in India is broken. We fixed it.</strong></p>
+    </div>
+
+    <div class="why-image">
+      <img src={reason} alt="SalaryBooks illustration"></img>
+    </div>
+
+      {/* <div className="cards-container">
+        {cards.map((card, idx) => (
+          <div className="card" key={idx}>
+            <h4>{card.title}</h4>
+            <p>{card.text}</p>
+          </div>
+        ))}
+      </div> */}
+    </section>
+    </>
   );
 };
 

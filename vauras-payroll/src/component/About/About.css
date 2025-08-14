@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap');
+
 .about-section {
   padding: 40px 20px;
   max-width: 1200px;
   margin: auto;
-  font-family: Arial, sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 .highlight {
@@ -27,11 +29,12 @@
 .mission-text {
   flex: 1;
   font-size: 20px;
+  font-family: 'Outfit', sans-serif;
 }
 
 .intro-image img,
 .mission-image img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
@@ -60,12 +63,50 @@
 .why-us-details {
   max-width: 800px;
   margin: auto;
-  text-align: left;
+  text-align: center;
 }
 
 .why-us-details p {
   margin: 6px 0;
+  font-size: 18px;
+  padding: 10px;
 }
+.with p {
+  margin: 6px 0;
+  font-size: 18px;
+}
+
+.why-us-section {
+  text-align: center;
+  padding: 20px;
+  background: #afd6e9;
+  border-radius: 20px;
+  border: 2px solid #0a6ddf;
+}
+
+.why-us-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2563eb; /* Same blue from screenshot */
+}
+
+.why-us-heading span {
+  color: #2563eb; /* Keep US? also in blue */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .why-us-heading {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-us-heading {
+    font-size: 1.3rem;
+  }
+}
+
 
 /* Responsive */
 @media (max-width: 992px) {
@@ -121,4 +162,129 @@
     font-size: 1.2rem;
   }
 }
+
+.why-built-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+}
+
+.subtitle {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 5px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.title span {
+  color: #2563eb; /* Blue highlight */
+}
+
+.description {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 10px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.highlight {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #f9fbff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  border: 1px solid #e0e7ff;
+}
+
+.card h4 {
+  color: #2563eb;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .cards-container {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .description {
+    font-size: 0.9rem;
+  }
+  .card h4 {
+    font-size: 0.95rem;
+  }
+}
+.why-text {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.why-text strong {
+  font-weight: 600;
+}
+
+.why-image {
+  flex: 1;
+  text-align: center;
+}
+
+.why-image img {
+  max-width: 60%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .why-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .why-text {
+    order: 1;
+  }
+
+  .why-image {
+    order: 2;
+  }
+}
+
+.with {
+   width:900px;
+   margin-left: 100px;
+  }
+
 
