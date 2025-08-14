@@ -11,36 +11,36 @@ import reason from "./aboutimage/aboutimg3.png";
 
 const AboutSection = () => {
 
-  const cards = [
-    {
-      title: "Manual Payroll Was Slow, Error-Prone, and Stressful",
-      text: "SalaryBooks automates salary calculations, tax deductions, and report generation—saving time and reducing costly errors.",
-    },
-    {
-      title: "India Needed a Future–Ready Payroll System",
-      text: "Businesses now need cloud access, automation, role-based controls, and remote capabilities. SalaryBooks is cloud-first, secure, scalable, and designed to India.",
-    },
-    {
-      title: "Employee Experience Was Being Ignored Before",
-      text: "Employees once waited for payslips and lacked attendance or leave info. SalaryBooks’ portal gives real-time access, boosting satisfaction.",
-    },
-    {
-      title: "The Tools in the Market Didn’t Fit Indian Needs",
-      text: "Global payroll tools are pricey and generic & local ones clunky or outdated. SalaryBooks is designed for Indian businesses—affordable, easy to use, and packed with compliance-ready features.",
-    },
-    {
-      title: "Compliance Was a Constant Headache",
-      text: "India’s labor laws are complex and frequently updated. SalaryBooks stays up to date with the latest statutory requirements so businesses don’t face penalties, notices, or legal issues.",
-    },
-    {
-      title: "We Lived the Problem Ourselves",
-      text: "India’s labor laws are complex and frequently updated. SalaryBooks stays up to date with the latest statutory requirements so businesses don’t face penalties, notices, or legal issues.",
-    },
-    {
-      title: "SMEs Deserved the Same Efficiency as Large Enterprises",
-      text: "Big companies have access to costly HR suites. But small businesses lacked the tools to match that efficiency. SalaryBooks levels the playing field.",
-    },
-  ];
+  // const cards = [
+  //   {
+  //     title: "Manual Payroll Was Slow, Error-Prone, and Stressful",
+  //     text: "SalaryBooks automates salary calculations, tax deductions, and report generation—saving time and reducing costly errors.",
+  //   },
+  //   {
+  //     title: "India Needed a Future–Ready Payroll System",
+  //     text: "Businesses now need cloud access, automation, role-based controls, and remote capabilities. SalaryBooks is cloud-first, secure, scalable, and designed to India.",
+  //   },
+  //   {
+  //     title: "Employee Experience Was Being Ignored Before",
+  //     text: "Employees once waited for payslips and lacked attendance or leave info. SalaryBooks’ portal gives real-time access, boosting satisfaction.",
+  //   },
+  //   {
+  //     title: "The Tools in the Market Didn’t Fit Indian Needs",
+  //     text: "Global payroll tools are pricey and generic & local ones clunky or outdated. SalaryBooks is designed for Indian businesses—affordable, easy to use, and packed with compliance-ready features.",
+  //   },
+  //   {
+  //     title: "Compliance Was a Constant Headache",
+  //     text: "India’s labor laws are complex and frequently updated. SalaryBooks stays up to date with the latest statutory requirements so businesses don’t face penalties, notices, or legal issues.",
+  //   },
+  //   {
+  //     title: "We Lived the Problem Ourselves",
+  //     text: "India’s labor laws are complex and frequently updated. SalaryBooks stays up to date with the latest statutory requirements so businesses don’t face penalties, notices, or legal issues.",
+  //   },
+  //   {
+  //     title: "SMEs Deserved the Same Efficiency as Large Enterprises",
+  //     text: "Big companies have access to costly HR suites. But small businesses lacked the tools to match that efficiency. SalaryBooks levels the playing field.",
+  //   },
+  // ];
 
   return (
     <>
