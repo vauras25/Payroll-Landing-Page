@@ -1,7 +1,7 @@
 .landing-container {
   text-align: center;
   padding: 40px 20px;
-  font-family: 'Segoe UI', sans-serif;
+  /* font-family: 'Segoe UI', sans-serif; */
 }
 
 .link1{
@@ -263,6 +263,18 @@
     width: 33%;
     text-align: center;
   }
+.dynamic-text {
+  color: #007bff;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.landing-container h1 {
+  text-align: center;
+  padding: 40px 20px;
+   font-size: 2rem;
+   margin-bottom: 0;
+  /* font-family: 'Segoe UI', sans-serif; */
+}
 }
 
 @media (max-width: 1000px) {
