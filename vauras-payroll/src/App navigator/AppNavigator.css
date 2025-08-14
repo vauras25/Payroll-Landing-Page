@@ -11,18 +11,34 @@
   justify-content: space-between;
   /* margin-top: -31px; */
 }
+ .nav-logo-container {
+  width: 20px; /* or whatever size you want */
+  height: auto; /* keeps the aspect ratio */
+}
 
 /* Logo Styling */
+.nav-logo {
+  width: 220px; /* smaller size */
+  height: auto; /* keeps proportions */
+   height: 50px;
+}
+
+@media (max-width: 480px) {
+  .nav-logo {
+    width: 140px; /* even smaller on mobile */
+    height: auto;
+  }
+}
 .nav-logo-container {
   display: flex;
   align-items: center;
+  max-width: 120px;
 }
-
-.nav-logo {
+/* .nav-logo {
   height: 50px;
   width: auto;
   cursor: pointer;
-}
+} */
 
 /* Hamburger Menu */
 .menu-toggle {
@@ -135,4 +151,5 @@
   .navbar {
     padding: 4px 6px;
   }
+ 
 }
