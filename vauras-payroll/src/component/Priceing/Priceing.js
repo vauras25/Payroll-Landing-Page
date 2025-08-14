@@ -78,6 +78,8 @@ const plans = [
       }
     ],
     color: 'premium1',
+    class: 'pre1',
+    class1: 'reg1'
   },
   {
     name: 'Salary Books',
@@ -176,6 +178,7 @@ const plans = [
       }
     ],
     color: 'premium2',
+    class: 'pre2'
   },
   {
     name: 'Final Payroll',
@@ -207,6 +210,7 @@ const plans = [
       }
     ],
     color: 'premium3',
+    class: 'pre3'
   },
   {
     name: 'TPP Outsourcing',
@@ -230,6 +234,7 @@ const plans = [
       }
     ],
     color: 'premium4',
+    class: 'pre4'
   },
 ];
 
@@ -309,8 +314,8 @@ const Pricing = () => {
                   }
                 })}
               </ul>
-              <hr />
-              <button className="cta-button">Demo</button>
+              <hr className={plan.class1}  /> 
+             <button className={plan.class}>Schedule Demo</button>
             </div>
           </div>
         ))}
@@ -357,7 +362,6 @@ const Pricing = () => {
       </div>
     </div>
       </div>
-       <Footer/>
     </>
    
   );
