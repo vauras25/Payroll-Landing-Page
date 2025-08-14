@@ -336,7 +336,9 @@ const Pricing = () => {
       <div className="events-section">
         <h2 className="events-title">Rare Critical/Complex Events</h2>
         <p className="events-subtitle">
-          These services are not included in retainership package but available on case-to-case basis fee.
+            These services are not included in retainership package but available on case-
+  <br />
+  to-case basis fee.
         </p>
 
         <div className="events-list">
