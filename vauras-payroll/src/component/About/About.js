@@ -8,14 +8,10 @@ import expertIcon from "./aboutimage/abouticon3.png";
 import securityIcon from "./aboutimage/abouticon4.png";
 import reason from "./aboutimage/aboutimg3.png";
 import family from "./aboutimage/aboutimg4.png";
-<<<<<<< HEAD
-import logo from "../../image/partnership.png"
-=======
 import vaurasLogo from "./aboutimage/aboutimage5.png";
 import logo from "../../image/partnership.png"
 import { Link } from "react-router-dom";
 
->>>>>>> be1ae64a1d0a216dc9a77850161976912e3538cc
 
 const AboutSection = () => {
 
@@ -201,15 +197,6 @@ const AboutSection = () => {
       </div> 
       </section>
 
-<<<<<<< HEAD
-
-
-
-
-
-
-      {/* Abir    */}
-=======
       <section className="powered-section">
       <h2 className="powered-title">
         Powered by <span className="brand">VAURAS</span>
@@ -256,7 +243,6 @@ const AboutSection = () => {
       </p>
     </section>
 
->>>>>>> be1ae64a1d0a216dc9a77850161976912e3538cc
     <div className="perfect-partnership">
       <h2>
         The <span className="highlight">Perfect Partnership</span>
@@ -278,11 +264,7 @@ const AboutSection = () => {
         </strong>
       </p>
 
-<<<<<<< HEAD
-        <img className="logo_about" src={logo} />
-=======
         <img className="logo_about" src={logo} alt="VAURAS Logo" />
->>>>>>> be1ae64a1d0a216dc9a77850161976912e3538cc
       {/* <div className="equation">
         <img src="/salarybooks.png" alt="SalaryBooks" />
         <span>+</span>
@@ -293,11 +275,7 @@ const AboutSection = () => {
         <img src="/growth.png" alt="Growth" />
       </div> */}
 
-<<<<<<< HEAD
-      
-=======
 
->>>>>>> be1ae64a1d0a216dc9a77850161976912e3538cc
     </div>
     <p className="footer-text">
         <li>If your requirements are not met here then you can try <strong>Third Party Payroll</strong> or <strong>customizable</strong> </li>
@@ -305,10 +283,6 @@ const AboutSection = () => {
       </p>
 
       <div className="buttons">
-<<<<<<< HEAD
-        <button className="btn1">VISIT US</button>
-        <button className="btn2">CONTACT US</button>
-=======
         <button className="btn1">
          
 <Link to="https://www.vauras.in/" className="link1">
@@ -321,7 +295,6 @@ VISIT US
           CONTACT US
   </Link>
           </button>
->>>>>>> be1ae64a1d0a216dc9a77850161976912e3538cc
       </div>
     </>
   );
