@@ -141,7 +141,7 @@
 }
 
 .highlight {
-  color: #2563eb; /* Blue for highlighted words */
+  color: #25eb35; /* Blue for highlighted words */
   font-weight: 700;
 }
 .people {
@@ -403,6 +403,494 @@
   .perfect-partnership {
     padding: 20px;
   }
+<<<<<<< HEAD
+=======
+/* --- 900px breakpoint --- */
+@media (max-width: 900px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .why-text {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .why-image img {
+    max-width: 70%;
+  }
+
+  .cards-container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .familyimage img {
+    max-width: 60%;
+  }
+}
+
+/* --- 768px breakpoint --- */
+@media (max-width: 768px) {
+  .subtitle {
+    font-size: 1.6rem;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .row {
+    gap: 15px;
+  }
+
+  .cards-container,
+  .cards-container2 {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .familyimage img {
+    max-width: 70%;
+  }
+}
+
+/* --- 480px breakpoint --- */
+@media (max-width: 480px) {
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .why-text {
+    font-size: 14px;
+  }
+
+  .why-image img {
+    max-width: 80%;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-left: 20px;
+  }
+  .cards-container2 {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .card {
+    padding: 15px;
+
+  }
+  .card2 {
+    padding: 12px;
+    width: 280px;
+    margin-left: 15px;
+
+  }
+
+  .familyimage img {
+    max-width: 90%;
+  }
+
+
+  .powered-section {
+    font-family: 'Outfit', sans-serif;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+    line-height: 1.6;
+    color: #000;
+    text-align: center;
+  }
+  
+  .powered-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .powered-title span {
+    color: #2563eb; /* Blue highlight */
+  }
+  
+  .powered-description {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  
+  .powered-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .powered-list {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .powered-list h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .powered-list ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .powered-list li {
+    margin-bottom: 8px;
+  }
+  
+  .powered-logo {
+    flex: 0 0 200px;
+    text-align: center;
+  }
+  
+  .powered-logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .powered-footer {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Breakpoints */
+  
+  /* Tablets */
+  @media (max-width: 900px) {
+    .powered-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .powered-list {
+      text-align: center;
+    }
+  
+    .powered-list ul {
+      padding-left: 0;
+      list-style-position: inside;
+    }
+  
+    .powered-logo {
+      margin-top: 15px;
+    }
+  }
+  
+  
+  /* Mobile */
+  @media (max-width: 600px) {
+    .powered-title {
+      font-size: 1.5rem;
+    }
+  
+    .powered-description,
+    .powered-footer {
+      font-size: 0.95rem;
+    }
+  
+    .powered-list h3 {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .powered-title {
+      font-size: 1.3rem;
+    }
+  
+    .powered-description,
+    .powered-footer {
+      font-size: 0.9rem;
+    }
+  
+    .powered-list li {
+      font-size: 0.9rem;
+    }
+  }
+  .powered-section {
+    text-align: center;
+  }
+  
+}
+.powered-section {
+  text-align: center;
+  margin: auto; 
+}
+.powered-title{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.powered-description{
+  text-align: center;
+  margin-bottom: 30px;
+  width: 1100px;
+  margin-left: 220px;
+}
+.powered-footer{
+  text-align: center;
+  margin-bottom: 30px;
+  width: 1100px;
+  margin-left: 220px;
+}
+.powered-list{
+  margin-left: 100px;
+  font-family: 'Outfit', sans-serif;
+  
+}
+.powered-list ul{
+  margin-left: 200px;
+  font-family: 'Outfit', sans-serif;
+  text-align: left;
+}
+.powered-logo img {
+  width: 200px; /* adjust to preferred size */
+  height: auto;
+  margin-right: 200px;
+}
+@media (max-width: 480px) {
+  .powered-logo img {
+    width: 90px;
+  }
+}
+
+
+
+/* --- 1200px and below --- */
+@media (max-width: 1200px) {
+  .powered-description,
+  .powered-footer {
+    width: 90%;
+    margin: 0 auto 30px auto;
+  }
+
+  .powered-list ul {
+    margin-left: 50px;
+  }
+
+  .powered-logo img {
+    width: 180px;
+    margin-right: 0;
+  }
+}
+
+/* --- 900px and below --- */
+@media (max-width: 900px) {
+  .powered-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .powered-list {
+    margin-left: 0;
+  }
+
+  .powered-list ul {
+    margin-left: 0;
+    list-style-position: inside;
+    text-align: center;
+  }
+
+  .powered-logo {
+    margin-top: 20px;
+  }
+
+  .powered-logo img {
+    width: 150px;
+  }
+}
+
+/* --- 768px and below --- */
+@media (max-width: 768px) {
+  .powered-title {
+    font-size: 1.5rem;
+  }
+
+  .powered-description,
+  .powered-footer {
+    font-size: 0.95rem;
+    width: 95%;
+  }
+
+  .powered-list ul {
+    font-size: 0.95rem;
+  }
+}
+
+/* --- 480px and below --- */
+@media (max-width: 480px) {
+  .powered-title {
+    font-size: 1.3rem;
+  }
+
+  .powered-description,
+  .powered-footer {
+    font-size: 0.9rem;
+    width: 100%;
+    margin: 0 auto 20px auto;
+  }
+
+  .powered-list ul {
+    font-size: 0.9rem;
+  }
+
+  .powered-logo img {
+    width: 200px;
+  }
+}
+
+.perfect-partnership {
+  border: 2px solid #2c64c6;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: #f1f9ff;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  font-family: 'Outfit', sans-serif;
+}
+
+.perfect-partnership h2 {
+  font-size: 33px;
+  font-weight: 700;
+}
+
+.perfect-partnership .highlight {
+  color: #0066cc;
+}
+
+.perfect-partnership .intro {
+  font-size: 16px;
+  margin: 31px 0;
+}
+
+.perfect-partnership .italic {
+  font-style: italic;
+}
+
+.benefits {
+  list-style: none;
+  padding: 0;
+  margin: 46px 0;
+}
+
+.benefits li {
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.tagline {
+  font-weight: bold;
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+}
+
+.logo_about{
+  width: 70%;
+}
+.equation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.equation img {
+  height: 70px;
+  width: 70px;
+  object-fit: contain;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 6px;
+  background: white;
+}
+
+.footer-text {
+  list-style: none;
+  margin-top: 20px;
+  font-size: 18px;
+  margin-left: -6px;
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  gap: 40px; /* Space between buttons */
+      margin-top: 31px;
+    margin-bottom: 42px;
+}
+
+.btn1 {
+  background-color: #4d7bbd; /* Blue color */
+  color: white;
+  border: none;
+  padding: 21px 66px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.btn2 {
+  background-color: #4d7bbd; /* Blue color */
+  color: white;
+  border: none;
+  padding: 21px 51px;font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.btn1:hover ,.btn2:hover {
+  background-color: #3a66a2; /* Slightly darker on hover */
+}
+
+
+
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .perfect-partnership h2 {
+    font-size: 1.8rem;
+  }
+  .perfect-partnership .intro {
+    font-size: 1rem;
+  }
+  .benefits li {
+    font-size: 0.95rem;
+  }
+  .logo_about {
+    max-width: 90%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .perfect-partnership {
+    padding: 20px;
+  }
+>>>>>>> be1ae64a1d0a216dc9a77850161976912e3538cc
   .perfect-partnership h2 {
     font-size: 1.6rem;
   }
@@ -422,6 +910,29 @@
         font-size: 0.95rem;
   }
 }
+<<<<<<< HEAD
+=======
+
+/* Extra small devices */
+@media (max-width: 400px) {
+  .perfect-partnership h2 {
+    font-size: 1.4rem;
+  }
+  .perfect-partnership .intro {
+    font-size: 0.9rem;
+  }
+  .benefits li {
+    font-size: 0.9rem;
+  }
+  .tagline {
+    font-size: 0.95rem;
+  }
+  .equation img {
+    height: 50px;
+    width: 50px;
+  }
+}
+>>>>>>> be1ae64a1d0a216dc9a77850161976912e3538cc
 
 /* Extra small devices */
 @media (max-width: 400px) {

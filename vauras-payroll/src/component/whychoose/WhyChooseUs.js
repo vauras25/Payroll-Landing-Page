@@ -71,18 +71,16 @@ const WhyChooseUs = () => {
        <div className="row">
         <div className="text-column">
           <div className="text-block">
-            <h3>Built for Indian Businesses</h3>
+            <h3>End-to-End Payroll Automation
+            </h3>
             <p>
-              SalaryBooks is designed with Indian regulations and business
-              practices at its core—not as an afterthought.
+            Automate everything from salary calculations and deductions to payslip generation, compliance, and bank transfers—accurately and on time.
             </p>
           </div>
           <div className="text-block">
-            <h3>Backed and Built by Compliance and Payroll Experts</h3>
+            <h3>Fully Compliant, Always Updated</h3>
             <p>
-              The platform combines deep industry knowledge with advanced
-              technology to ensure accurate calculations, seamless statutory
-              adherence, and reliable payroll processing every time.
+            With built-in support for PF, ESI, TDS, PT, and more, SalaryBooks ensures you’re always in line with the vast and confusing Indian Legal & Compliance landscape. We track compliance, so you sleep peacefully.
             </p>
           </div>
         </div>
@@ -95,19 +93,15 @@ const WhyChooseUs = () => {
        
         <div className="text-column">
           <div className="text-block">
-            <h3>Dedicated Support & Onboarding</h3>
+            <h3>Secure & Cloud-Based</h3>
             <p>
-              We don’t just give you software—we guide you every step of the way.
-              From data migration to employee onboarding, our team ensures a
-              smooth setup and ongoing support.
+            Access your payroll data securely from anywhere, anytime. Bank-grade encryption, automated backups, and strict role-based access controls keep your data safe and confidential.
             </p>
           </div>
           <div className="text-block">
-            <h3>Transparent, Affordable Pricing</h3>
+            <h3>Employee-Friendly Portal</h3>
             <p>
-              SalaryBooks’ plans let you pay only for what you use — simple,
-              transparent, and cost-efficient for startups, SMEs, and
-              enterprises.
+            Empower your team with self-service access to payslips, tax info, leave balances, and more. Fewer questions and more time for HR. More clarity for employees. App & Web version also available for the employee mobile app.
             </p>
           </div>
         </div>

@@ -8,7 +8,14 @@ import expertIcon from "./aboutimage/abouticon3.png";
 import securityIcon from "./aboutimage/abouticon4.png";
 import reason from "./aboutimage/aboutimg3.png";
 import family from "./aboutimage/aboutimg4.png";
+<<<<<<< HEAD
 import logo from "../../image/partnership.png"
+=======
+import vaurasLogo from "./aboutimage/aboutimage5.png";
+import logo from "../../image/partnership.png"
+import { Link } from "react-router-dom";
+
+>>>>>>> be1ae64a1d0a216dc9a77850161976912e3538cc
 
 const AboutSection = () => {
 
@@ -53,9 +60,9 @@ const AboutSection = () => {
           <div className="introduction-text">
             <h1>
               <span className="brand">SalaryBooks</span> – A payroll software{" "}
-              <span className="highlight">built for India</span>,<br />
+              <span className="brand">built for India</span>,<br />
               <span className="people">  by people who understand{" "}</span>
-              <span className="highlight">Indian</span> payroll.
+              <span className="brand">Indian</span> payroll.
             </h1>
           </div>
         </section>
@@ -194,6 +201,7 @@ const AboutSection = () => {
       </div> 
       </section>
 
+<<<<<<< HEAD
 
 
 
@@ -201,6 +209,54 @@ const AboutSection = () => {
 
 
       {/* Abir    */}
+=======
+      <section className="powered-section">
+      <h2 className="powered-title">
+        Powered by <span className="brand">VAURAS</span>
+      </h2>
+
+      <p className="powered-description">
+        Behind <strong>SalaryBooks</strong> seamless compliance features is the expertise of{" "}
+        <strong>
+          VAURAS, a trusted name in statutory compliance and HR solutions.
+        </strong>
+        <br />
+        The Company is an extension to the consulting group which is active in HR
+        Services for almost two decades. We collaborate with client organizations to
+        manage their entire employee life cycle effectively, by handling their complex,
+        yet critical functions of payroll and statutory labour compliance.
+      </p>
+
+      <div className="powered-content row">
+        <div className="powered-list column">
+          <h3>VAURAS specializes in:</h3>
+          <ul>
+            <li>Third Party Payroll</li>
+            <li>ESIC (Employees’ State Insurance Corporation)</li>
+            <li>PF (Provident Fund)</li>
+            <li>Ptax Solutions</li>
+            <li><strong>Statutory Compliance & Advisory</strong></li>
+            <li>Labour Laws</li>
+            <li>Payroll Management</li>
+            <li>Shop & Establishment</li>
+            <li>LWF (Labour Welfare Fund)</li>
+            <li>Gratuity</li>
+          </ul>
+        </div>
+
+        <div className="powered-logo column">
+          <img src={vaurasLogo} alt="VAURAS Logo" />
+        </div>
+      </div>
+
+      <p className="powered-footer">
+        With years of experience and a <strong>team of compliance experts</strong>,
+        VAURAS ensures every statutory filing, employee benefit, and legal requirement
+        within SalaryBooks is handled with precision and timeliness.
+      </p>
+    </section>
+
+>>>>>>> be1ae64a1d0a216dc9a77850161976912e3538cc
     <div className="perfect-partnership">
       <h2>
         The <span className="highlight">Perfect Partnership</span>
@@ -222,7 +278,11 @@ const AboutSection = () => {
         </strong>
       </p>
 
+<<<<<<< HEAD
         <img className="logo_about" src={logo} />
+=======
+        <img className="logo_about" src={logo} alt="VAURAS Logo" />
+>>>>>>> be1ae64a1d0a216dc9a77850161976912e3538cc
       {/* <div className="equation">
         <img src="/salarybooks.png" alt="SalaryBooks" />
         <span>+</span>
@@ -233,7 +293,11 @@ const AboutSection = () => {
         <img src="/growth.png" alt="Growth" />
       </div> */}
 
+<<<<<<< HEAD
       
+=======
+
+>>>>>>> be1ae64a1d0a216dc9a77850161976912e3538cc
     </div>
     <p className="footer-text">
         <li>If your requirements are not met here then you can try <strong>Third Party Payroll</strong> or <strong>customizable</strong> </li>
@@ -241,8 +305,23 @@ const AboutSection = () => {
       </p>
 
       <div className="buttons">
+<<<<<<< HEAD
         <button className="btn1">VISIT US</button>
         <button className="btn2">CONTACT US</button>
+=======
+        <button className="btn1">
+         
+<Link to="https://www.vauras.in/" className="link1">
+VISIT US
+  </Link>
+        </button>
+        <button className="btn2">
+          
+          <Link to="/contact" className="link1">
+          CONTACT US
+  </Link>
+          </button>
+>>>>>>> be1ae64a1d0a216dc9a77850161976912e3538cc
       </div>
     </>
   );
