@@ -256,6 +256,7 @@ const Pricing = () => {
           <span>Pay only for the features you need </span>— upgrade anytime as you grow.
         </p>
       </div>
+      <div className='full-container'>
       <div className="pricing-container">
         {plans.map((plan, index) => (
           <div className={`pricing-card ${plan.color}`} key={index}>
@@ -314,11 +315,13 @@ const Pricing = () => {
                   }
                 })}
               </ul>
-              <hr className={plan.class1}  /> 
+              {/* <hr className={plan.class1}  />  */}
+              <hr /> 
              <button className={plan.class}>Schedule Demo</button>
             </div>
           </div>
         ))}
+      </div>
       </div>
         <div className="critical-events-container">
       {/* Top Banner */}
@@ -337,8 +340,8 @@ const Pricing = () => {
         <h2 className="events-title">Rare Critical/Complex Events</h2>
         <p className="events-subtitle">
             These services are not included in retainership package but available on case-
-  <br />
-  to-case basis fee.
+          <br />
+          to-case basis fee.
         </p>
 
         <div className="events-list">
@@ -362,7 +365,7 @@ const Pricing = () => {
           <strong>These are only available for <span className="highlight">existing</span> SalaryBooks Clients.</strong>
         </p>
       </div>
-    </div>
+      </div>
       </div>
     </>
    
