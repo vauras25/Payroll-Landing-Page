@@ -70,7 +70,7 @@
     font-size: 14px;
     color: #333;
     margin-top: 15px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-size: larger;
     flex-grow: 1;
     overflow-y: auto;       /* Add vertical scroll if content overflows */
@@ -89,7 +89,7 @@
     font-size: 14px;
     color: #333;
     margin-top: 15px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-size: larger;
   }
   

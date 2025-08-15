@@ -71,12 +71,12 @@ useEffect(() => {
 }, [isMobile, testimonials.length]);
 
 const nextTestimonials = () => {
-    setCurrentIndex(prevIndex => (prevIndex + (isMobile ? 1 : 2)) % testimonials.length);
+      setCurrentIndex(prevIndex => (prevIndex + 1) % testimonials.length);
 };
 
 const prevTestimonials = () => {
     setCurrentIndex(prevIndex =>
-        prevIndex - (isMobile ? 1 : 2) < 0 ? testimonials.length - (isMobile ? 1 : 2) : prevIndex - (isMobile ? 1 : 2)
+        (prevIndex - 1 + testimonials.length) % testimonials.length
     );
 };
 
@@ -123,11 +123,11 @@ return (
 
             {/* Move Dots Below Testimonials */}
             <div className="dots-container">
-                {Array.from({ length: testimonials.length / (isMobile ? 1 : 2) }, (_, i) => (
+                {Array.from({ length: testimonials.length}, (_, i) => (
                     <span
                         key={i}
-                        className={`dot ${i === Math.floor(currentIndex / (isMobile ? 1 : 2)) ? 'active' : ''}`}
-                        onClick={() => setCurrentIndex(i * (isMobile ? 1 : 2))}
+                         className={`dot ${i === currentIndex ? 'active' : ''}`}
+                        onClick={() => setCurrentIndex(i )}
                     ></span>
                 ))}
             </div>

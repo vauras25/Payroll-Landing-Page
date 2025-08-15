@@ -33,10 +33,12 @@
 
 .fratures_head {
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+    font-family: 'Outfit', sans-serif;
   margin-top: 50px;
 }
-
+.fratures_head h2,p {
+  font-family: 'Outfit', sans-serif;
+}
 .feature-card h3 {
   font-size: 16px;
   font-weight: 600;
