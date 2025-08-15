@@ -618,43 +618,71 @@
   background-color: #f1f1f1;
   font-family: 'Outfit', sans-serif;
 }
-
 .top-banner {
   background-color: #e3f0f9;
   padding: 20px 0;
-      margin-top: 96px;
+  margin-top: 96px;
 }
 
 .banner-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* gap: 20px; */
-  max-width: 503px;
+  gap: 20px;
+  max-width: 800px;
   margin: auto;
+  padding: 0 20px;
 }
 
 .banner-image {
-      max-height: 170px;
-    margin-top: -27px;
-    margin-bottom: -29px;
-    margin-left: -44%;
+  max-height: 170px;
+  flex-shrink: 0;
 }
-.banner-text{
-      position: relative;
-    left: 48%;
-        text-align: right;
+
+.banner-text {
+  text-align: left;
 }
+
 .banner-text h2 {
-  font-size: 20px;
-      font-size: 26px;
-    margin-left: 21%;
+  font-size: 26px;
+  margin: 0 0 8px;
 }
 
 .banner-text p {
-  margin: 13px 0 0;
+  margin: 0;
   font-size: 18px;
   color: #444;
+}
+
+/* Tablet adjustments */
+@media (max-width: 768px) {
+  .banner-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner-image {
+    max-height: 150px;
+    margin: 0;
+  }
+  .banner-text {
+    text-align: center;
+  }
+  .banner-text h2 {
+    font-size: 22px;
+  }
+  .banner-text p {
+    font-size: 16px;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .banner-text h2 {
+    font-size: 20px;
+  }
+  .banner-text p {
+    font-size: 15px;
+  }
 }
 
 /* Events Section */
@@ -732,3 +760,50 @@
 }
 
 
+@media (max-width: 900px) {
+  .events-list {
+    gap: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .events-title {
+    font-size: 1.5rem;
+  }
+
+  .events-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .events-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .events-list ul {
+    padding-left: 0;
+    list-style-position: inside;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .events-title {
+    font-size: 1.3rem;
+  }
+
+  .events-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .events-list ul {
+    font-size: 0.9rem;
+  }
+
+  .events-footer {
+    font-size: 0.9rem;
+  }
+}
