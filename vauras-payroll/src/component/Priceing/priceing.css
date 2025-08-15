@@ -618,43 +618,44 @@
   background-color: #f1f1f1;
   font-family: 'Outfit', sans-serif;
 }
+
 .top-banner {
   background-color: #e3f0f9;
   padding: 20px 0;
-  margin-top: 96px;
+      margin-top: 96px;
 }
 
 .banner-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  max-width: 800px;
+  /* gap: 20px; */
+  max-width: 503px;
   margin: auto;
-  padding: 0 20px;
 }
 
 .banner-image {
-  max-height: 170px;
-  flex-shrink: 0;
+      max-height: 170px;
+    margin-top: -27px;
+    margin-bottom: -29px;
+    margin-left: -44%;
 }
-
-.banner-text {
-  text-align: left;
+.banner-text{
+      position: relative;
+    left: 48%;
+        text-align: right;
 }
-
 .banner-text h2 {
-  font-size: 26px;
-  margin: 0 0 8px;
+  font-size: 20px;
+      font-size: 26px;
+    margin-left: 21%;
 }
 
 .banner-text p {
-  margin: 0;
+  margin: 13px 0 0;
   font-size: 18px;
   color: #444;
 }
-
-/* Tablet adjustments */
 @media (max-width: 768px) {
   .banner-content {
     flex-direction: column;
@@ -684,7 +685,6 @@
     font-size: 15px;
   }
 }
-
 /* Events Section */
 .events-section {
   text-align: center;
