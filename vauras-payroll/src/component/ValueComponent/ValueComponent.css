@@ -120,6 +120,7 @@
   text-align: center;
   padding: 40px 20px;
   margin-top: 0;
+  font-family: 'Outfit', sans-serif;
   /* background: linear-gradient(to bottom, #9fb4c5 60%, #1167d6); */
 }
 .box-wrapper {
@@ -135,7 +136,7 @@
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
-  font-family: Arial, sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 .box-header {

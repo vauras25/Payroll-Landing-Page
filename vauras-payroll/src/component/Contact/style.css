@@ -1,5 +1,5 @@
 .contact-container {
-  font-family: Arial, sans-serif;
+  font-family: 'Outfit', sans-serif;
   padding: 2rem;
   /* background: url("/your-background.jpg") no-repeat center center/cover; */
   color: #333;
@@ -8,7 +8,7 @@
 .contact-content {
     padding: 40px 30px;
     background-color: #ffffff;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Outfit', sans-serif;
 }
 
 /* The single flex container */
@@ -174,10 +174,10 @@
     .contact-content {
     padding: 28px 9px;
     background-color: #ffffff;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Outfit', sans-serif;
 }
 .contact-container {
-  font-family: Arial, sans-serif;
+  font-family: 'Outfit', sans-serif;
   padding: 0.5rem;
   /* background: url("/your-background.jpg") no-repeat center center/cover; */
   color: #333;
