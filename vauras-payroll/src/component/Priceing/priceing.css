@@ -804,6 +804,26 @@
   .banner-text p {
     font-size: 15px;
   }
+ .pricing-card.premium1 {
+    width: 115% !important;
+  }
+ .pricing-card.premium2 {
+    width: 115% !important;
+    margin-left: 20px;
+  }
+ .pricing-card.premium3 {
+    width: 115% !important;
+  }
+ .pricing-card.premium4 {
+    width: 115% !important;
+     margin-left: 20px;
+  }
+  .topbar {
+    width: 140% !important;
+  }
+      .pricing-card-header strong {
+        font-size: 12px !important;
+      }
 }
 /* Events Section */
 .events-section {

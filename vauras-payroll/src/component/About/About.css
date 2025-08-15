@@ -145,6 +145,7 @@
   line-height: 1.4;
   font-weight: 600;
   color: #000;
+  align-items: center;
 }
 
 .brand {
@@ -640,6 +641,7 @@
 
   .powered-logo {
     margin-top: 20px;
+    order: -1;
   }
 
   .powered-logo img {

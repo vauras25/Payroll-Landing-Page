@@ -465,6 +465,7 @@
 
   .value-container {
     padding: 0px 10px;
+    margin-top: 20px;
   }
 
   .task-container {
@@ -505,7 +506,7 @@
     }
   
     .value-container {
-      margin-top: 0px;
+      margin-top: 10px;
     }
   }
   

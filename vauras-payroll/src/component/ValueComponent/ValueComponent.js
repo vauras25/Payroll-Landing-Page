@@ -74,7 +74,7 @@ const ValueComponent = () => {
         <div className="value-container">
             {/* Heading */}
             <h2>
-                Everyone gets value from day 1
+               The intelligent payroll software
             </h2>
             <p className="heading-part2">
                 A platform loved by everyone in your company - by employers and employees
@@ -346,7 +346,7 @@ const ValueComponent = () => {
                 </div>
 
                 <div className="image-container">
-                    <img src={personImage4} alt="Management" />
+                    <img src={personImage5} alt="Management" />
                 </div>
                 </div>
             )}
@@ -414,7 +414,7 @@ const ValueComponent = () => {
                 </div>
 
                 <div className="image-container">
-                    <img src={personImage5} alt="Employee" />
+                    <img src={personImage4} alt="Employee" />
                 </div>
                 </div>
             )}
