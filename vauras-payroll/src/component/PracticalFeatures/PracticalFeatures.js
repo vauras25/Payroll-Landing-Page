@@ -85,6 +85,9 @@ export default function Features() {
     <>
     <div className="fratures_head">
         <h2>Accurately Practical Features</h2>
+        <p className="subtext12">
+        that simplify payroll & keep Compliance effortless.
+      </p>
     </div>
     <div className="features-section">
       

@@ -32,7 +32,10 @@
   font-family: 'Outfit', sans-serif;
 }
 
-.intro-image img,
+.intro-image img{
+   max-width: 80%;
+  height: auto;
+}
 .mission-image img {
   max-width: 80%;
   height: auto;
@@ -114,6 +117,15 @@
   .mission-section {
     flex-direction: column;
     text-align: center;
+  }
+   .intro-section {
+    flex-direction: column; /* Stack vertically */
+  }
+  .intro-image {
+    order: 1; /* Image comes first */
+  }
+  .intro-text {
+    order: 2; /* Text comes second */
   }
 }
 
@@ -410,8 +422,8 @@
   }
   .card2 {
     padding: 12px;
-    width: 280px;
-    margin-left: 15px;
+    /* width: 280px;
+    margin-left: 15px; */
 
   }
 
@@ -783,7 +795,9 @@
   background-color: #3a66a2; /* Slightly darker on hover */
 }
 
-
+.logo_vauras{
+  width: 5%;
+}
 
 
 

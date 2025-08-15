@@ -120,7 +120,7 @@ const Contact = () => {
             <p>Reach us:</p>
             <p> <FaMapMarkerAlt /> 162/A/57 Lake Gardens, Kolkata - 700045</p>
             <p><FaPhoneAlt /> +91  7605060599</p>
-            <p><FaPhoneAlt /> +91 98317766186</p>
+            <p><FaPhoneAlt /> +91 9831776186</p>
             <p><FaEnvelope /> namaste@salarybooks.com</p>
 
             <div className="map-wrapper">

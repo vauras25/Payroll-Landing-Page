@@ -82,7 +82,7 @@
 .image-container img {
   width: 100%;
   height: auto;
-  margin-top:42px;
+  /* margin-top:42px; */
   border-radius: 15px;
 }
 .heading-part2 {

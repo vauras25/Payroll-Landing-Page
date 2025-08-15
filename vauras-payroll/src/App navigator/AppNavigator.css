@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap');
 /* Navbar styles */
 .navbar {
   background-color: rgb(255, 255, 255);
@@ -60,7 +61,7 @@
   list-style: none;
   padding: 0;
   margin-left: auto;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 .nav-item {

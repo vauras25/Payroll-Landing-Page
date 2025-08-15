@@ -13,13 +13,16 @@ const WhyChooseUs = () => {
       <h2 className="text-center">Why Choose Us ?</h2>
       {/* </div> */}
        {/* <div className="subtitle"> */}
-      <p className="text-center">
+      <p className="text-center">``
         Empowering your business with expert compliance and solutions for lasting
         satisfaction and growth.
       </p>
       {/* </div> */}
 
       <div className="row">
+        <div className="image-column">
+          <img src={img3} alt="Payroll illustration" />
+        </div>
         <div className="text-column">
           <div className="text-block">
             <h3>Built for Indian Businesses</h3>
@@ -37,14 +40,14 @@ const WhyChooseUs = () => {
             </p>
           </div>
         </div>
-        <div className="image-column">
-          <img src={img3} alt="Payroll illustration" />
-        </div>
+        
       </div>
 
       {/* Row 2 */}
       <div className="row reverse">
-       
+       <div className="image-column2">
+          <img src={img4} alt="Compliance illustration" />
+        </div>
         <div className="text-column">
           <div className="text-block">
             <h3>Dedicated Support & Onboarding</h3>
@@ -63,12 +66,13 @@ const WhyChooseUs = () => {
             </p>
           </div>
         </div>
-         <div className="image-column2">
-          <img src={img4} alt="Compliance illustration" />
-        </div>
+         
       </div>
 
        <div className="row">
+        <div className="image-columnby">
+          <img src={img2} alt="Payroll illustration" />
+        </div>
         <div className="text-column">
           <div className="text-block">
             <h3>End-to-End Payroll Automation
@@ -84,13 +88,13 @@ const WhyChooseUs = () => {
             </p>
           </div>
         </div>
-        <div className="image-columnby">
-          <img src={img2} alt="Payroll illustration" />
-        </div>
+        
       </div>
 
        <div className="row reverse">
-       
+         <div className="image-column2">
+          <img src={img5} alt="Compliance illustration" />
+        </div>
         <div className="text-column">
           <div className="text-block">
             <h3>Secure & Cloud-Based</h3>
@@ -105,12 +109,13 @@ const WhyChooseUs = () => {
             </p>
           </div>
         </div>
-         <div className="image-column2">
-          <img src={img5} alt="Compliance illustration" />
-        </div>
+       
       </div>
 
       <div className="row">
+        <div className="image-columnpay">
+          <img src={img1} alt="Payroll illustration" />
+        </div>
         <div className="text-column">
           <div className="text-block">
             <h3>Scalable for Growth</h3>
@@ -125,9 +130,7 @@ const WhyChooseUs = () => {
             </p>
           </div>
         </div>
-        <div className="image-columnpay">
-          <img src={img1} alt="Payroll illustration" />
-        </div>
+        
       </div>
     </section>
   );

@@ -145,12 +145,13 @@ const AboutSection = () => {
               <strong>User-Friendly Interface</strong> – No tech expertise
               required
             </p>
-          </div>
-          <div className="with">
             <p>
               With SalaryBooks, businesses of all sizes — from startups to large enterprises — gain a smarter, faster, and more transparent way to manage their employees.
             </p>
           </div>
+          {/* <div className="with">
+            
+          </div> */}
         </div>
       </section>
 
