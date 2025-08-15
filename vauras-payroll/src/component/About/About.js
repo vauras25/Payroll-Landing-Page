@@ -248,7 +248,7 @@ const AboutSection = () => {
         The <span className="highlight">Perfect Partnership</span>
       </h2>
       <p className="intro">
-        By <span className="italic">combining</span> SalaryBooks cutting-edge payroll technology with
+        By <strong >combining</strong> SalaryBooks cutting-edge payroll technology with
         VAURAS’s deep compliance expertise, we offer a complete solution that delivers:
       </p>
 
@@ -260,7 +260,7 @@ const AboutSection = () => {
 
       <p className="tagline">
         <strong>
-          SalaryBooks + Vauras Advisory — Your all-in-one solution for payroll, compliance, and HR excellence.
+          SalaryBooks + Vauras Advisory = Your all-in-one solution for payroll, compliance, and HR excellence.
         </strong>
       </p>
 

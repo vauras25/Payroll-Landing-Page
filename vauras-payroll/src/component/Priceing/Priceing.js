@@ -178,7 +178,8 @@ const plans = [
       }
     ],
     color: 'premium2',
-    class: 'pre2'
+    class: 'pre2',
+    class1: 'reg2'
   },
   {
     name: 'Final Payroll',
@@ -210,7 +211,8 @@ const plans = [
       }
     ],
     color: 'premium3',
-    class: 'pre3'
+    class: 'pre3',
+    class1: 'reg3'
   },
   {
     name: 'TPP Outsourcing',
@@ -234,7 +236,8 @@ const plans = [
       }
     ],
     color: 'premium4',
-    class: 'pre4'
+    class: 'pre4',
+    class1: 'reg4'
   },
 ];
 
@@ -316,10 +319,11 @@ const Pricing = () => {
                 })}
               </ul>
               {/* <hr className={plan.class1}  />  */}
-              <hr /> 
-             <button className={plan.class}>Schedule Demo</button>
-            </div>
-          </div>
+                 <div className={plan.class1} >
+                <button className={plan.class}>Schedule Demo</button>
+                </div>
+                </div>
+                </div>
         ))}
       </div>
       </div>
