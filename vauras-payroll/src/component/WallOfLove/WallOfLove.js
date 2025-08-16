@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import '../WallOfLove/WallofLove.css';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import testinomial1 from '../../image/testinomial1.avif'
-import testinomial2 from '../../image/testinomial2.avif'
-import testinomial3 from '../../image/testinomial3.avif'
-import testinomial4 from '../../image/testinomial4.avif'
-
+import testinomial1 from '../../image/testimonials pictures/manav saraf.avif'
+import testinomial2 from '../../image/testimonials pictures/rohit bothra.avif'
+import testinomial3 from '../../image/testimonials pictures/rudresh agarwal.avif'
+import testinomial4 from '../../image/testimonials pictures/VISHAL BAGARIA.avif'
+import testinomial5 from '../../image/testimonials pictures/MAYANK PATODIA.avif'
 const WallOfLove = () => {
     const testimonials = [
         {
@@ -80,7 +80,7 @@ const prevTestimonials = () => {
     );
 };
 
-const testimonialImages = [testinomial1, testinomial2, testinomial3, testinomial4];
+const testimonialImages = [testinomial1, testinomial2, testinomial3, testinomial4,testinomial5];
 
 
 return (
