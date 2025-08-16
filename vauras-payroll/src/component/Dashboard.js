@@ -205,7 +205,7 @@ const positionNames = [
           >
             View Pricing
           </a> */}
-           <Link to="/contact" className="link1">
+           <Link to="/Pricing" className="link1">
     View Pricing
   </Link>
         </button>
