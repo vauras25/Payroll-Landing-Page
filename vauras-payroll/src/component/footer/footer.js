@@ -14,8 +14,8 @@ export default function Footer() {
       <div className="contact-item1">
         <strong>
             <h4>Call us at:</h4>
-        <p>+91 9831776176</p>
-        <p>+91 7606050596</p>
+        <p>+91 9831776186</p>
+        <p>+91 7605060596</p>
         </strong>
       </div>
 
