@@ -12,7 +12,26 @@
   gap: 20px;
   font-family: 'Outfit', sans-serif;
 }
+.link-btn {
+  background: none;
+  border: none;
+  color: inherit;
 
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+  gap: 10px;
+}
+.link-btn:hover {
+  background: none;
+  border: none;
+  color: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+  gap: 10px;
+}
 .contact-item1,
 .contact-item2 {
   flex: 1;
@@ -66,10 +85,13 @@
 
 
 .foot {
-      text-align: center;
-    margin-top: 4px;
-    background: #c9e8fa;
-    height: 40px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 20px;             
+  margin-top: 4px;
+  background: #c9e8fa;
+  height: 40px;
 }
 
 .foot a {
