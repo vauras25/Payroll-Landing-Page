@@ -1,8 +1,12 @@
+.Footer-full{
+  background: #c9e8fa;
+  font-family: 'Outfit', sans-serif;
+}
 .contact-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #c9e8fa;
+  
   padding: 20px 50px;
   flex-wrap: wrap;
   gap: 20px;
@@ -60,6 +64,126 @@
   background: #06274d;
 }
 
+
+.foot {
+      text-align: center;
+    margin-top: 4px;
+    background: #c9e8fa;
+    height: 40px;
+}
+
+.foot a {
+  margin: 0 30px;
+  color: black;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.foot a:hover {
+  text-decoration: underline;
+}
+
+/* Modal Styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75); /* dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  position: relative;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 600px;
+  max-width: 90%;
+  max-height: 80vh;       /* 🔹 limit modal height */
+  display: flex;
+  flex-direction: column; /* allows header + scrollable body */
+  overflow: hidden;
+}
+.email-link {
+            color: #1a73e8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .email-link:hover {
+            text-decoration: underline;
+        }
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-body {
+  flex: 1;
+  overflow-y: auto;       /* 🔹 scroll inside content */
+  margin-top: 10px;
+  padding-right: 10px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+strong {
+            color: #2c3e50;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ol {
+            padding-left: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .definition-list {
+            margin-left: 20px;
+        }
+        .definition-term {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .contact-info {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .prohibitions {
+            margin-left: 20px;
+        }
+
+        .full-footer{
+          margin-bottom: 10px;
+        }
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /* Tablet (992px) */
 @media (max-width: 992px) {
   .contact-section {
@@ -108,3 +232,10 @@
     font-size: 13px;
   }
 }
+  .definition-list {
+            margin-left: 20px;
+        }
+        .definition-term {
+            font-weight: bold;
+            margin-top: 10px;
+        }
