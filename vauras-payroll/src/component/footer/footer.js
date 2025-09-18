@@ -492,11 +492,17 @@ export default function Footer() {
       
     </div>
     
-    <div className="foot">
-        <a onClick={() => openModal("privacy")}> Privacy Policy</a>
-        <a onClick={() => openModal("refund")}> Refund Policy</a>
-        <a onClick={() => openModal("terms")}> Terms & Conditions</a>
-      </div>
+   <div className="foot">
+  <a href="#" onClick={(e) => { e.preventDefault(); openModal("privacy"); }}>
+    Privacy Policy
+  </a>
+  <a href="#" onClick={(e) => { e.preventDefault(); openModal("refund"); }}>
+    Refund Policy
+  </a>
+  <a href="#" onClick={(e) => { e.preventDefault(); openModal("terms"); }}>
+    Terms & Conditions
+  </a>
+</div>
       <div></div>
       {/* Modal */}
       {modalOpen && (
