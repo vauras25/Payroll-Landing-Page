@@ -40,7 +40,7 @@ const AboutSection = () => {
     },
     {
       title: "We Lived the Problem Ourselves",
-      text: "India’s labor laws are complex and frequently updated. SalaryBooks stays up to date with the latest statutory requirements so businesses don’t face penalties, notices, or legal issues.",
+      text: "As professionals & business owners. we experienced firsthand how frustrating payroll could be. We lived the pain points. SalaryBooks is built by people who understand Indian payroll, not just software.",
     },
     {
       title: "SMEs Deserved the Same Efficiency as Large Enterprises",
@@ -302,3 +302,4 @@ VISIT US
 };
 
 export default AboutSection;
+
