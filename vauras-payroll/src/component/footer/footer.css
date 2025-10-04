@@ -87,15 +87,14 @@
 .foot {
   display: flex;
   justify-content: center; 
-  align-items: center;     
-  gap: 20px;             
+  align-items: center;                 
   margin-top: 4px;
   background: #c9e8fa;
   height: 40px;
 }
 
 .foot a {
-  margin: 0 30px;
+  margin: 0 17px;
   color: black;
   cursor: pointer;
   font-weight: 500;
