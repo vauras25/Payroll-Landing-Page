@@ -1,0 +1,76 @@
+/* Container */
+.terms-of-use-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #f3f7fb;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  font-family: "Inter", "Segoe UI", sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Title */
+.terms-of-use-container h1 {
+   font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  font-weight: 700;
+  color: #1a73e8;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 30px;
+}
+
+/* Section Headings */
+.section h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #0d47a1;
+}
+
+/* Paragraphs */
+.section p {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Definition list styling */
+.definition-list {
+  margin-left: 20px;
+  border-left: 2px solid #e0e0e0;
+  padding-left: 15px;
+}
+
+.definition-term {
+  font-weight: 600;
+  margin-top: 15px;
+  color: #0d47a1;
+}
+
+/* Ordered Lists */
+ol {
+  margin-left: 25px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .terms-of-use-container {
+    padding: 30px 15px;
+  }
+
+  .terms-of-use-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .section h3 {
+    font-size: 1.2rem;
+  }
+}
