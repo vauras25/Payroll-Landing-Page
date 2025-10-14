@@ -67,7 +67,7 @@ const Navigator = () => {
           </NavLink>
         </li>
         <li className="nav-item">
-        <NavLink to="https://vauras.cloud/login"  className="nav-link login-btn">
+        <NavLink to="https://app.salarybooks.com/login"  className="nav-link login-btn">
           Login
           </NavLink>
           {/* <a href="https://app.salarybooks.com/login" className="nav-link" target="_blank" rel="noopener noreferrer">
@@ -81,3 +81,4 @@ const Navigator = () => {
 
 
 export default Navigator;
+
