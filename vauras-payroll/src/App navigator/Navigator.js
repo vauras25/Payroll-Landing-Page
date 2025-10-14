@@ -70,7 +70,7 @@ const Navigator = () => {
         <NavLink to="https://vauras.cloud/login"  className="nav-link login-btn">
           Login
           </NavLink>
-          {/* <a href="https://vauras.cloud/login" className="nav-link" target="_blank" rel="noopener noreferrer">
+          {/* <a href="https://app.salarybooks.com/login" className="nav-link" target="_blank" rel="noopener noreferrer">
             Login
           </a> */}
         </li>
@@ -78,5 +78,6 @@ const Navigator = () => {
     </nav>
   );
 };
+
 
 export default Navigator;
