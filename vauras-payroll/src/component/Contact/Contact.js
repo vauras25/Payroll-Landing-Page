@@ -1,6 +1,8 @@
 import React , { useState } from "react";
 import "./style.css";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
+
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -61,11 +63,23 @@ const Contact = () => {
       alert("Error submitting form");
     }
   };
+
+  const location = useLocation();
+  console.log(location.pathname);
+
   return (
+     <>
+     {location.pathname === "/Contact" && (
+        <div className="contact-blue-banner">
+          <h2>Contact Us</h2>
+        </div>
+      )}
     <div className="contact-container">
+      {location.pathname !== "/Contact" && (
       <div className="contact-header">
         <h2 className="text-center">Contact us</h2>
       </div>
+      )}
       <div className="contact-content">
         {/* This is the single parent container */}
         <div className="contact-inner">
@@ -140,7 +154,7 @@ const Contact = () => {
 
 
     </div>
-  
+  </>
   );
 };
 
