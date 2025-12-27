@@ -28,6 +28,7 @@ font-family: 'Outfit', sans-serif;
   }
   .metric-section-item {
    text-align: center;
+   color:#308ef3;
   }
 
   .metric-section-item h2 {
@@ -169,4 +170,5 @@ font-family: 'Outfit', sans-serif;
     align-items: center;
     margin-bottom: 30px;
 }
+
   }
