@@ -43,6 +43,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+  margin-right: 58px;
 }
 
 .form label {
@@ -119,7 +120,13 @@
   overflow: hidden;
   height: 250px;
 }
-
+.contact-blue-banner {
+  background-color: #1976d2;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 70px; /* height of navbar */
+}
 /* Responsive layout */
 @media (max-width: 768px) {
   .contact-inner {
@@ -182,4 +189,13 @@
   /* background: url("/your-background.jpg") no-repeat center center/cover; */
   color: #333;
 }
+.contact-blue-banner {
+  background-color: #1976d2;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 70px; /* height of navbar */
+}
+
+
 }
