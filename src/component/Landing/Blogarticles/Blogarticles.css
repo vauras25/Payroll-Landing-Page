@@ -1,0 +1,71 @@
+.blog-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fafb;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* ── Blue header bar ── */
+.blog-header-bar {
+  background-color: #2563eb;
+  padding: 1.1rem 2rem;
+  text-align: center;
+}
+
+.blog-header-title {
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+/* ── Body ── */
+.blog-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem 2rem;
+  background-color: #f9fafb;
+}
+
+.blog-coming-soon {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 0.4rem;
+}
+
+.blog-under-construction {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin: 0 0 1.5rem;
+}
+
+/* ── SVG illustration ── */
+.blog-illustration {
+  width: 100%;
+  max-width: 560px;
+}
+
+.blog-svg {
+  width: 100%;
+  height: auto;
+}
+
+/* ── Responsive ── */
+@media (max-width: 480px) {
+  .blog-header-title {
+    font-size: 1.35rem;
+  }
+
+  .blog-coming-soon {
+    font-size: 1.1rem;
+  }
+
+  .blog-illustration {
+    max-width: 320px;
+  }
+}
