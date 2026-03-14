@@ -21,7 +21,7 @@ mongoose.connect(process.env.MONGO_URI, {
   process.exit(1);
 });
 
-app.post("/api/submit-contact-details", async (req, res) => {
+app.post("/submit-contact-details", async (req, res) => {
   
   try {
     const { name, company, phone, email, employees, services, message } = req.body;
