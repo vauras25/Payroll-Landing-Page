@@ -11,7 +11,7 @@ function BlogArticles() {
         <p className="blog-coming-soon">Coming soon...</p>
         <p className="blog-under-construction">This page is under construction.</p>
         <div className="blog-illustration">
-            <img src={costruction} className="info-image" />
+            <img src={costruction} alt="Blog Article" className="info-image" />
         </div>
       </div>
     </div>
