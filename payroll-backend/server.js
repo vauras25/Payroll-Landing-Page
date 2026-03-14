@@ -40,7 +40,7 @@ app.post("/submit-contact-details", async (req, res) => {
   }
 });
 
-app.post("/api/contact", async (req, res) => {
+app.post("/contact", async (req, res) => {
     
   try {
     const contact = new Contact(req.body);
@@ -51,6 +51,6 @@ app.post("/api/contact", async (req, res) => {
   }
 });
 
-app.listen(5000, () => {
-  console.log("Server is running on port 5000");
+app.listen(8080, () => {
+  console.log("Server is running on port 8080S");
 });
