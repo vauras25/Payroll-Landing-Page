@@ -140,7 +140,7 @@ function Footer() {
         </svg>
       </div>
 
-      <a href="#" className="footer-whatsapp" aria-label="WhatsApp">
+      <a href="/blogarticles" className="footer-whatsapp" aria-label="WhatsApp">
         <MessageCircle size={24} />
       </a>
     </footer>
