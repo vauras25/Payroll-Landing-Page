@@ -36,11 +36,11 @@ const Navigator = () => {
             Home
           </NavLink>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <NavLink to="/payroll-software-in-india" className="nav-link1" onClick={handleLinkClick}>
             Landing
           </NavLink>
-        </li>
+        </li> */}
         <li className="nav-item">
           <NavLink to="/about" className="nav-link1" onClick={handleLinkClick}>
             About
