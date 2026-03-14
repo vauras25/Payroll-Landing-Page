@@ -74,7 +74,7 @@ function Footer() {
             <ul className="footer-list">
               <li><a href="/blogarticles" className="footer-link">Help Center</a></li>
               <li><a href="/blogarticles" className="footer-link">Product Demos</a></li>
-              <li><a href="/blogarticles" className="footer-link">Contact Us</a></li>
+              <li><a href="/contact" className="footer-link">Contact Us</a></li>
             </ul>
           </div>
         </div>
