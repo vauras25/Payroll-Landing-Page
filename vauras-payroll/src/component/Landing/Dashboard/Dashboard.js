@@ -30,8 +30,8 @@ function Dashboard() {
     e.preventDefault();
     setStatus("loading");
     try {
-      // const res = await fetch("https://contact.salarybooks.com/submit-contact-details", {
-      const res = await fetch("http://localhost:5000/submit-contact-details", {
+      const res = await fetch("https://contact.salarybooks.com/submit-contact-details", {
+      // const res = await fetch("http://localhost:5000/submit-contact-details", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -104,10 +104,10 @@ function Dashboard() {
                 {/* <div className="mockup-bar-blue"></div>
                 <div className="mockup-bar-gray w-2-3"></div>
                 <div className="mockup-bar-gray w-full"></div> */}
-                <img src={dashboardImage} className="info-image" />
+                <img src={dashboardImage} alt="Dashboard Preview" className="info-image" />
               </div>
               <div className="mockup-narrow">
-                <img src={Mob_img} className="info-image" />
+                <img src={Mob_img} alt="Mobile App Preview" className="info-image" />
               </div>
             </div>
           </div>
