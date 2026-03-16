@@ -64,7 +64,7 @@ function Footer() {
               <li><a href="/blogarticles" className="footer-link">Automated Payroll</a></li>
               <li><a href="/blogarticles" className="footer-link"> Payslip Generator  </a></li>
               <li><a href="/blogarticles" className="footer-link">Expense Management</a></li>
-              <li><a href="/blogarticles" className="footer-link">Tax & TDS Filing </a></li>
+              <li><a href="/payroll-software-in-india" className="footer-link">Payroll Software In India</a></li>
               <li><a href="/blogarticles" className="footer-link">  Employee Self-Service</a></li>
             </ul>
           </div>
